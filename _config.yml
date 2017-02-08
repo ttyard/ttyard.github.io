@@ -1,0 +1,29 @@
+# Site settings
+title: 自动化运维
+subtitle: 专注于自动化运维与云计算相关行业技术
+email: ericwcn@163.com
+description: 站点的建立主要是为了分享在工作中的最佳实践、常见问题的解决方法。最阶段性的成果进行总结，供交流、分享。
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "localhost" # the base hostname & protocol for your site
+author: 深海游鱼
+street_address: Jiangsu,wuxi
+city: Wuxi
+state: Jiangsu
+zip_code: 214100
+country: CN
+phone: 15370001234
+
+# Social settings
+500px_url: 
+facebook_url: https://facebook.com/
+github_url: https://github.com/ttyard
+gitlab_url: https://gitlab.com/ttyard
+googleplus_url: https://plus.google.com
+instagram_url: https://instagram.com/
+linkedin_url: https://www.linkedin.com/in/%E7%AB%8B%E6%9D%B0-%E7%8E%8B-53393192/
+pinterest_url: https://pinterest.com/ttyard
+slack_url: https://slack.com/ttyard
+twitter_url: https://twitter.com/ttyard
+
+# Build settings
+markdown: kramdown

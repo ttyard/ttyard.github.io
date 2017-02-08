@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+
+{% include head.html %}
+
+<body>
+
+    <!-- Wrapper -->
+    <div id="wrapper">
+
+        <!-- Main -->
+        <div id="main">
+            <div class="inner">
+
+                {% include header.html %}
+
+                {{ content }}
+                
+                <!-- Section -->
+                <section>
+                    <header class="major">
+                        <h2>文章</h2>
+                    </header>
+                    <div class="posts">
+                    
+                    {% for post in site.posts %}
+                    <article>
+                        {% if post.categories contains 'homepage' %}
+                            {% if post.figure %}
+                            <a href="{{post.url}}" class="image"><img src="{{site.url}}/{{post.figure}}" alt="" /></a>
+                            {% endif %}
+                            <h3>{{post.title}}</h3>
+                            <p>{{post.description}}</p>
+                            <ul class="actions">
+                                <li><a href="{{post.url}}" class="button">阅读...</a></li>
+                            </ul>
+                        {% endif %}
+                    </article>
+                    {% endfor %}
+                </section>    
+            </div>
+        </div>
+
+        {% include sidebar.html %}
+
+    </div>
+
+    {% include footer.html %}
+
+</body>
+
+</html>

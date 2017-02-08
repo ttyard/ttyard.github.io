@@ -1,9 +1,18 @@
-##IPSec VPN虚拟专网技术之StrongSwan
+---
+layout: post
+title:  "IPSec VPN虚拟专网技术之StrongSwan"
+date:   2017-02-06 14:28:55 +0800
+categories: network homepage
+figure: assets/images/pic03.jpg
+description: "本文主要讲述如何在Linux操作系统平台下使用strongSwan建立IPSec VPN网络系统"
+---
 
-###1.IPSec概述
+## IPSec VPN虚拟专网技术之StrongSwan
+
+### 1.IPSec概述
 
 
-###2.基础环境准备
+### 2.基础环境准备
 
 安装编译环境
 
@@ -14,7 +23,7 @@ apt-get install build-essential
 apt-get install libgmp10 libgmp3-dev libssl-dev pkg-config libpcsclite-dev libpam0g-dev
 
 
-###3.安装配置StrongSwan
+### 3.安装配置StrongSwan
 ####3.1 编译安装StrongSwan
 wget https://download.strongswan.org/strongswan-5.5.0.tar.gz
 
@@ -24,7 +33,7 @@ tar -xzvf strongswan-5.5.0.tar.gz && cd strongswan-5.5.0
 
 make && make install
 
-####3.2 配置StrongWan证书
+#### 3.2 配置StrongWan证书
 #####3.2.1.生成x.509 CA根证书
 mkdir /etc/ipsec.d/p12
 
@@ -34,12 +43,12 @@ ipsec pki --gen --outform pem > private/caKey.pem
 
 ipsec pki --self --in private/caKey.pem --dn "C=CN, O=Pactera, CN=Pactera VPN Root CA" --ca --outform pem > cacerts/caCert.pem
 
-#####3.2.2.生成服务器证书
+##### 3.2.2.生成服务器证书
 ipsec pki --gen --outform pem > private/serverKey.pem
 
 ipsec pki --pub --in private/serverKey.pem | ipsec pki --issue --cacert cacerts/caCert.pem --cakey private/caKey.pem --dn "C=CN, O=IPSec VPN, CN=vpn.pactera.top" --san="vpn.pactera.top" --san="vpn.wanglijie.cn" --flag serverAuth --flag ikeIntermediate --outform pem > certs/serverCert.pem
 
-#####3.2.3.创建登录客户端证书
+##### 3.2.3.创建登录客户端证书
 ipsec pki --gen --outform pem > private/client1Key.pem
 
 ipsec pki --pub --in private/client1Key.pem | ipsec pki --issue --cacert cacerts/caCert.pem --cakey private/caKey.pem --dn "C=CN, O=IPSec VPN, CN=client1" --outform pem > certs/client1Cert.pem
@@ -48,7 +57,7 @@ ipsec pki --pub --in private/client1Key.pem | ipsec pki --issue --cacert cacerts
 
 openssl pkcs12 -export -inkey private/client1Key.pem -in certs/client1Cert.pem -name "client1" -certfile cacerts/caCert.pem -caname "Pactera VPN Root CA" -out p12/client1Cert.p12
 
-####3.3.配置StrongSwan
+#### 3.3.配置StrongSwan
 mv /etc/ipsec.conf /etc/ipsec.conf.bak
 
 vim /etc/ipsec.conf
@@ -81,7 +90,7 @@ conn osx10-ios9-ikev2
     rightid="*@xxx.org"
     leftsendcert=always
 
-####3.4.IPSec 密码文件
+#### 3.4.IPSec 密码文件
 vim /etc/ipsec.secrets
 
 : RSA serverKey.pem
@@ -90,7 +99,7 @@ wp设备名称\用户名2 : EAP "密码2"  #仅对windowsphone8.1设备
 
 对于windowsphone8.1，在客户端输入的用户名发送到服务器显示为设备名称\用户名的形式，故认证需加上设备名称,设备名称在设置-关于-手机信息 中查看
 
-####3.5.添加DNS服务器IP
+#### 3.5.添加DNS服务器IP
 
 vim /etc/strongswan.conf
 
@@ -101,7 +110,7 @@ charon {
     dns2 = 208.67.222.222
 }
 
-###4.配置 Iptables 转发
+### 4.配置 Iptables 转发
 iptables -A INPUT -p udp --dport 500 -j ACCEPT
 
 iptables -A INPUT -p udp --dport 4500 -j ACCEPT
@@ -116,7 +125,7 @@ iptables -A FORWARD -s 10.11.1.0/24 -j ACCEPT     #同上
 
 为避免VPS重启后NAT功能失效，可以把如上5行命令添加到 /etc/rc.local 文件中，添加在exit那一行之前即可。
 
-###5.启动strongswan:
+### 5.启动strongswan:
 
 后台运行: ipsec start
 
