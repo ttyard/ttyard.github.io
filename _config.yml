@@ -1,29 +1,72 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
 # Site settings
-title: 自动化运维
-subtitle: 专注于自动化运维与云计算相关行业技术
-email: ericwcn@163.com
-description: 站点的建立主要是为了分享在工作中的最佳实践、常见问题的解决方法。最阶段性的成果进行总结，供交流、分享。
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: 深海游鱼
+email: ttyard@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  这是我的个人站点.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "localhost" # the base hostname & protocol for your site
-author: 深海游鱼
-street_address: Jiangsu,wuxi
-city: Wuxi
-state: Jiangsu
-zip_code: 214100
-country: CN
-phone: 15370001234
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ericwcn
+github_username:  ttyard
+rss_url: /pages/atom.xml
 
-# Social settings
-500px_url: 
-facebook_url: https://facebook.com/
-github_url: https://github.com/ttyard
-gitlab_url: https://gitlab.com/ttyard
-googleplus_url: https://plus.google.com
-instagram_url: https://instagram.com/
-linkedin_url: https://www.linkedin.com/in/%E7%AB%8B%E6%9D%B0-%E7%8E%8B-53393192/
-pinterest_url: https://pinterest.com/ttyard
-slack_url: https://slack.com/ttyard
-twitter_url: https://twitter.com/ttyard
+# 作者信息
+author: 
+  name: 深海游鱼
+  email: ttyard@gmail.com
+  link: http://painterlin.com
+  weibo: http://weibo.com/orangeissweet
+  github: http://github.com/ttyard
+  music: http://site.douban.com/linanya
+  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+  
+# google analytics 设置
+ga:
+  id: UA-54262064-1 
+  url: painterlin.com
 
+# disqus 设置
+disqus:
+  shortname: painterlin
+
+# 主题设置，自动激活某个标签
+active: 读书
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Optimization
+  - LaTeX
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
+
+# gavatar头像及Favicon
+gavatar: /public/img/logo.jpg
+favicon: /favicon.ico
+  
+  
 # Build settings
 markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+exclude:
+  - Gemfile
+  - Gemfile.lock
