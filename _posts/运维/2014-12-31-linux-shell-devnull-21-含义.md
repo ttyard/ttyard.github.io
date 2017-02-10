@@ -4,7 +4,7 @@ title: 'Linux Shell /dev/null 2>&#038;1 含义'
 date: 2014-12-31T13:34:01+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=258
+guid: http://www.wanglijie.cn/?p=258
 permalink: '/2014/12/linux-shell-devnull-21-%e5%90%ab%e4%b9%89.html'
 views:
   - "547"

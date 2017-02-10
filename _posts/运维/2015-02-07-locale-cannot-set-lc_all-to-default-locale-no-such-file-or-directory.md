@@ -4,7 +4,7 @@ title: 'locale: Cannot set LC_ALL to default locale: No such file or directory'
 date: 2015-02-07T20:20:51+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=270
+guid: http://www.wanglijie.cn/?p=270
 permalink: /2015/02/locale-cannot-set-lc_all-to-default-locale-no-such-file-or-directory.html
 views:
   - "477"

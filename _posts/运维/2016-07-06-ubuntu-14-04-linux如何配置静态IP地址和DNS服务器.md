@@ -16,7 +16,7 @@ tags:
 ---
 本篇属于普及类的文章，将介绍如何在Ubuntu 14.04 Linux操作系统下配置静态的IP地址和DNS服务器。
   
-<img class="aligncenter  wp-image-606" src="http://www.wanglijie.cn/wp-content/uploads/2016/07/logo-ubuntu_st_no®-black_orange-hex.png" alt="logo-ubuntu_st_no®-black_orange-hex" width="425" height="304" />
+<img class="aligncenter  wp-image-606" src="http://images.wanglijie.cn/public/img/posts/2016/07/logo-ubuntu_st_no®-black_orange-hex.png" alt="logo-ubuntu_st_no®-black_orange-hex" width="425" height="304" />
 
 ## 1.配置静态IP地址
 

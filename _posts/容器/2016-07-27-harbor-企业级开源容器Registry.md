@@ -18,7 +18,7 @@ tags:
 
 VMware公司3月份开源了企业级Registry项目Harbor，由VMware中国研发的团队负责开发。Harbor项目是帮助用户迅速搭建一个企业级的registry 服务。它以Docker公司开源的registry为基础，提供了管理图形界面, 基于角色的访问控制(Role Based Access Control)，镜像远程复制（同步），AD/LDAP集成、以及审计日志(Audit logging) 等企业用户需求的功能，同时还原生支持中文，对广大中国用户是一个好消息。该项目推出4个月以来，在GitHub 获得了超过800个点赞的星星和200多个 forks。本文将介绍Harbor项目的主要组件，并阐述Harbor的工作原理。
 
-<img class="aligncenter size-full wp-image-643" src="http://www.wanglijie.cn/wp-content/uploads/2016/07/harbor-logo.png" alt="harbor-logo" width="350" height="163" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/07/harbor-logo.png 350w, http://www.wanglijie.cn/wp-content/uploads/2016/07/harbor-logo-300x140.png 300w" sizes="(max-width: 350px) 100vw, 350px" />
+<img class="aligncenter size-full wp-image-643" src="http://images.wanglijie.cn/public/img/posts/2016/07/harbor-logo.png" alt="harbor-logo" width="350" height="163" srcset="http://images.wanglijie.cn/public/img/posts/2016/07/harbor-logo.png 350w, http://images.wanglijie.cn/public/img/posts/2016/07/harbor-logo-300x140.png 300w" sizes="(max-width: 350px) 100vw, 350px" />
 
 ## **架构介绍**
 
@@ -54,7 +54,7 @@ Harbor在架构上主要由6个组件构成：
 
 Harbor的每个组件都是以Docker 容器的形式构建的，因此很自然地，我们使用Docker Compose来对它进行部署。
 
-<img class="aligncenter size-full wp-image-639" src="http://www.wanglijie.cn/wp-content/uploads/2016/07/1-harobr架构.png" alt="1-harobr架构" width="640" height="315" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/07/1-harobr架构.png 640w, http://www.wanglijie.cn/wp-content/uploads/2016/07/1-harobr架构-300x148.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
+<img class="aligncenter size-full wp-image-639" src="http://images.wanglijie.cn/public/img/posts/2016/07/1-harobr架构.png" alt="1-harobr架构" width="640" height="315" srcset="http://images.wanglijie.cn/public/img/posts/2016/07/1-harobr架构.png 640w, http://images.wanglijie.cn/public/img/posts/2016/07/1-harobr架构-300x148.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
 
 在源代码中(<a><strong>https://github.com/vmware/harbor</strong></a>), 用于部署Harbor的Docker Compose 模板位于 /Deployer/docker-compose.yml. 打开这个模板文件，会发现Harbor由6个容器组成：
 
@@ -93,7 +93,7 @@ Harbor的每个组件都是以Docker 容器的形式构建的，因此很自然�
 
 当用户输入所需信息并点击回车后，Docker 客户端会向地址“192.168.1.10/v2/” 发出HTTP GET请求。Harbor的各个容器会通过以下步骤处理：
 
-<img class="aligncenter size-full wp-image-641" src="http://www.wanglijie.cn/wp-content/uploads/2016/07/2-docker-login.png" alt="2-docker-login" width="640" height="211" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/07/2-docker-login.png 640w, http://www.wanglijie.cn/wp-content/uploads/2016/07/2-docker-login-300x99.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
+<img class="aligncenter size-full wp-image-641" src="http://images.wanglijie.cn/public/img/posts/2016/07/2-docker-login.png" alt="2-docker-login" width="640" height="211" srcset="http://images.wanglijie.cn/public/img/posts/2016/07/2-docker-login.png 640w, http://images.wanglijie.cn/public/img/posts/2016/07/2-docker-login-300x99.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
 
 **(a)** 首先，这个请求会由监听80端口的proxy容器接收到。根据预先设置的匹配规则，容器中的Nginx会将请求转发给后端的registry 容器；
 
@@ -109,7 +109,7 @@ Harbor的每个组件都是以Docker 容器的形式构建的，因此很自然�
 
 **docker push的流程**
 
-<img class="aligncenter size-full wp-image-642" src="http://www.wanglijie.cn/wp-content/uploads/2016/07/3-docker-push的流程-1.png" alt="3-docker-push的流程" width="640" height="262" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/07/3-docker-push的流程-1.png 640w, http://www.wanglijie.cn/wp-content/uploads/2016/07/3-docker-push的流程-1-300x123.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
+<img class="aligncenter size-full wp-image-642" src="http://images.wanglijie.cn/public/img/posts/2016/07/3-docker-push的流程-1.png" alt="3-docker-push的流程" width="640" height="262" srcset="http://images.wanglijie.cn/public/img/posts/2016/07/3-docker-push的流程-1.png 640w, http://images.wanglijie.cn/public/img/posts/2016/07/3-docker-push的流程-1-300x123.png 300w" sizes="(max-width: 640px) 100vw, 640px" />
 
 （我们省去proxy转发的步骤，上图描述了docker push的过程中各组件的通信）
 

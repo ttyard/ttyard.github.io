@@ -17,7 +17,7 @@ tags:
   
 即两台LDAP服务器互为主、备，其中任一节点数据更新，将自动同步到另外一个节点上，从而达到数据备份，避免了单点故障。
   
-[<img src="http://www.wanglijie.cn/wp-content/uploads/2016/05/1064028.png" alt="1064028" width="471" height="352" class="aligncenter size-full wp-image-451" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/05/1064028.png 471w, http://www.wanglijie.cn/wp-content/uploads/2016/05/1064028-300x224.png 300w" sizes="(max-width: 471px) 100vw, 471px" />](http://www.wanglijie.cn/wp-content/uploads/2016/05/1064028.png)
+[<img src="http://images.wanglijie.cn/public/img/posts/2016/05/1064028.png" alt="1064028" width="471" height="352" class="aligncenter size-full wp-image-451" srcset="http://images.wanglijie.cn/public/img/posts/2016/05/1064028.png 471w, http://images.wanglijie.cn/public/img/posts/2016/05/1064028-300x224.png 300w" sizes="(max-width: 471px) 100vw, 471px" />](http://images.wanglijie.cn/public/img/posts/2016/05/1064028.png)
 
 ## 1.OpenLDAP安装
 
@@ -91,7 +91,7 @@ EOF
 
   1. (1).两种方式新增的密码，在olcDatabase={2}bdb.ldif或olcDatabase={2}hdb.ldif文件中展现的形式略微不同。通过ldapi修改的密码，在ldif文件中，将不显示加密方式：
   
-    [<img src="http://www.wanglijie.cn/wp-content/uploads/2016/05/clipboard.png" alt="password" width="495" height="54" class="aligncenter size-full wp-image-454" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/05/clipboard.png 495w, http://www.wanglijie.cn/wp-content/uploads/2016/05/clipboard-300x33.png 300w" sizes="(max-width: 495px) 100vw, 495px" />](http://www.wanglijie.cn/wp-content/uploads/2016/05/clipboard.png)
+    [<img src="http://images.wanglijie.cn/public/img/posts/2016/05/clipboard.png" alt="password" width="495" height="54" class="aligncenter size-full wp-image-454" srcset="http://images.wanglijie.cn/public/img/posts/2016/05/clipboard.png 495w, http://images.wanglijie.cn/public/img/posts/2016/05/clipboard-300x33.png 300w" sizes="(max-width: 495px) 100vw, 495px" />](http://images.wanglijie.cn/public/img/posts/2016/05/clipboard.png)
   2. (2).请首先修改LDAP域后在修改密码。否则可能会导致创建的密码无法登录的情况。
   3. (3).CentOS6和CentOS7默认数据库存储方式不一样。CentOS7采用hdb，CentOS6采用bdb</li> 
 

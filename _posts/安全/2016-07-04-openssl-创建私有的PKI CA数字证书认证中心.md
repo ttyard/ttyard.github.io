@@ -24,7 +24,7 @@ CA即受信任的认证中心,由她维护一定范围内的信任体系.在该�
   
 有些时候,我们需要构建一套用于公司内部应用程序(Apache/Nginx/OpenVPN&#8230;)使用的数字证书,用于保证内部服务器或与外网服务器之间的数据传输安全.这时我们就需要构建一套自己的PKI/CA数字证书信任体系.
   
-<img src="http://www.wanglijie.cn/wp-content/uploads/2016/07/openssl-3.jpg" alt="openssl-3" width="300" height="115" class="aligncenter size-full wp-image-586" />
+<img src="http://images.wanglijie.cn/public/img/posts/2016/07/openssl-3.jpg" alt="openssl-3" width="300" height="115" class="aligncenter size-full wp-image-586" />
 
 ## 2.创建CA根证书
 

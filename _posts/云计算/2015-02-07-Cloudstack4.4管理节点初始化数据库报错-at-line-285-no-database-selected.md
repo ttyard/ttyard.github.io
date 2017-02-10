@@ -4,7 +4,7 @@ title: 'Cloudstack4.4管理节点初始化数据库报错：ERROR 1046 (3D000) a
 date: 2015-02-07T21:44:21+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=275
+guid: http://www.wanglijie.cn/?p=275
 permalink: '/2015/02/cloudstack4-4%e7%ae%a1%e7%90%86%e8%8a%82%e7%82%b9%e5%88%9d%e5%a7%8b%e5%8c%96%e6%95%b0%e6%8d%ae%e5%ba%93%e6%8a%a5%e9%94%99%ef%bc%9aerror-1046-3d000-at-line-285-no-database-selected.html'
 views:
   - "786"

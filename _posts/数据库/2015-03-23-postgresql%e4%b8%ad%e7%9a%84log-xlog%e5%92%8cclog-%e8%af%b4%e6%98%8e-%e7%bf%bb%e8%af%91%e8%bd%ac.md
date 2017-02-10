@@ -4,7 +4,7 @@ title: 'PostgreSQL中的log, xlog和clog 说明 [翻译/转]'
 date: 2015-03-23T15:26:29+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=279
+guid: http://www.wanglijie.cn/?p=279
 permalink: '/2015/03/postgresql%e4%b8%ad%e7%9a%84log-xlog%e5%92%8cclog-%e8%af%b4%e6%98%8e-%e7%bf%bb%e8%af%91%e8%bd%ac.html'
 views:
   - "577"

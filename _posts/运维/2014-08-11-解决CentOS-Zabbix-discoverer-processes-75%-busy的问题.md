@@ -4,7 +4,7 @@ title: '解决CentOS“Zabbix discoverer processes 75% busy”的问题'
 date: 2014-08-11T23:22:40+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=128
+guid: http://www.wanglijie.cn/?p=128
 permalink: '/2014/08/%e8%a7%a3%e5%86%b3zabbix%e6%80%a7%e8%83%bd%e7%9b%91%e6%8e%a7%e7%b3%bb%e7%bb%9fdiscoverer-processes-more-than-75-busy%e7%9a%84%e9%97%ae%e9%a2%98.html'
 views:
   - "846"
@@ -13,7 +13,7 @@ categories:
 tags:
   - "监控"  
 ---
-[<img class="size-medium wp-image-146 aligncenter" src="http://www.wanglijie.cn/wp-content/uploads/2014/08/Zabbix-2-2-300x124.png" alt="zabbix" width="300" height="124" srcset="http://www.wanglijie.cn/wp-content/uploads/2014/08/Zabbix-2-2-300x124.png 300w, http://www.wanglijie.cn/wp-content/uploads/2014/08/Zabbix-2-2.png 728w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.wanglijie.cn/wp-content/uploads/2014/08/Zabbix-2-2.png)
+[<img class="size-medium wp-image-146 aligncenter" src="http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2-300x124.png" alt="zabbix" width="300" height="124" srcset="http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2-300x124.png 300w, http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2.png 728w" sizes="(max-width: 300px) 100vw, 300px" />](http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2.png)
   
 在使用Zabbix过程中，当开启自动发现协议后，频繁出现“ Zabbix discoverer processes more than 75% busy”的报警信息，如下：
 

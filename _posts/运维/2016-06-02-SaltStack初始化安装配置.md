@@ -23,7 +23,7 @@ SaltStack是一个服务器基础架构集中化管理平台，salt底层采用�
   
 通过部署SaltStack环境，我们可以在成千上万台服务器上做到批量执行命令，根据不同业务特性进行配置集中化管理、分发文件、采集服务器数据、操作系统基础及软件包管理等，SaltStack是运维人员提高工作效率、规范业务配置与操作的利器。
 
-<img class="aligncenter size-full wp-image-485" src="http://www.wanglijie.cn/wp-content/uploads/2016/06/saltstack.png" alt="saltstack" width="308" height="72" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/06/saltstack.png 308w, http://www.wanglijie.cn/wp-content/uploads/2016/06/saltstack-300x70.png 300w" sizes="(max-width: 308px) 100vw, 308px" />
+<img class="aligncenter size-full wp-image-485" src="http://images.wanglijie.cn/public/img/posts/2016/06/saltstack.png" alt="saltstack" width="308" height="72" srcset="http://images.wanglijie.cn/public/img/posts/2016/06/saltstack.png 308w, http://images.wanglijie.cn/public/img/posts/2016/06/saltstack-300x70.png 300w" sizes="(max-width: 308px) 100vw, 308px" />
 
 ## 二、saltstack安装
 

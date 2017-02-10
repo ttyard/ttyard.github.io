@@ -4,7 +4,7 @@ title: Redhat/CentOS6系统使用ntfs-3g挂载NTFS分区
 date: 2014-12-02T10:50:52+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=233
+guid: http://www.wanglijie.cn/?p=233
 permalink: '/2014/12/redhatcentos6%e7%b3%bb%e7%bb%9f%e6%8c%82%e8%bd%bdntfs%e5%88%86%e5%8c%ba.html'
 views:
   - "345"

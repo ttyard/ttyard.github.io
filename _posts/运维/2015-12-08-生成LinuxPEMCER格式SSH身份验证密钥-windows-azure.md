@@ -43,7 +43,7 @@ yum search openssl-clients
 
 SSH密钥创建完成后，在创建虚拟机界面上传密钥的地方将.pem或者.cer格式的私钥上传到Azure控制台即可。
 
-[<img class="aligncenter size-full wp-image-424" src="http://www.wanglijie.cn/wp-content/uploads/2015/12/azure-ssh-key1.jpg" alt="azure-ssh-key" width="411" height="573" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/12/azure-ssh-key1.jpg 411w, http://www.wanglijie.cn/wp-content/uploads/2015/12/azure-ssh-key1-215x300.jpg 215w" sizes="(max-width: 411px) 100vw, 411px" />](http://www.wanglijie.cn/wp-content/uploads/2015/12/azure-ssh-key1.jpg)
+[<img class="aligncenter size-full wp-image-424" src="http://images.wanglijie.cn/public/img/posts/2015/12/azure-ssh-key1.jpg" alt="azure-ssh-key" width="411" height="573" srcset="http://images.wanglijie.cn/public/img/posts/2015/12/azure-ssh-key1.jpg 411w, http://images.wanglijie.cn/public/img/posts/2015/12/azure-ssh-key1-215x300.jpg 215w" sizes="(max-width: 411px) 100vw, 411px" />](http://images.wanglijie.cn/public/img/posts/2015/12/azure-ssh-key1.jpg)
 
 ## 5.下载SSH私钥到本地系统
 

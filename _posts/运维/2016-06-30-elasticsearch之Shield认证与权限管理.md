@@ -92,6 +92,6 @@ $ /usr/share/elasticsearch/bin/shield/esusers useradd kibanaserver -r kibana4_se
 
 一般不建议使用Shield，由于是商业软件安装成功有一定时间的试用期，导致之后部分功能将无法使用。
 
-[<img class="aligncenter size-full wp-image-569" src="http://www.wanglijie.cn/wp-content/uploads/2016/06/shield-triad.png" alt="shield-triad" width="532" height="300" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/06/shield-triad.png 532w, http://www.wanglijie.cn/wp-content/uploads/2016/06/shield-triad-300x169.png 300w" sizes="(max-width: 532px) 100vw, 532px" />](http://www.wanglijie.cn/wp-content/uploads/2016/06/shield-triad.png)
+[<img class="aligncenter size-full wp-image-569" src="http://images.wanglijie.cn/public/img/posts/2016/06/shield-triad.png" alt="shield-triad" width="532" height="300" srcset="http://images.wanglijie.cn/public/img/posts/2016/06/shield-triad.png 532w, http://images.wanglijie.cn/public/img/posts/2016/06/shield-triad-300x169.png 300w" sizes="(max-width: 532px) 100vw, 532px" />](http://images.wanglijie.cn/public/img/posts/2016/06/shield-triad.png)
 
 转载请注明：[自动化运维](http://www.wanglijie.cn) &raquo; [Elasticsearch之Shield认证与权限管理](http://www.wanglijie.cn/2016/06/elasticsearch%e4%b9%8bshield%e8%ae%a4%e8%af%81%e4%b8%8e%e6%9d%83%e9%99%90%e7%ae%a1%e7%90%86.html)

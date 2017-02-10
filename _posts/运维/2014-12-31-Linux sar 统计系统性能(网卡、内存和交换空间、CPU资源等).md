@@ -4,7 +4,7 @@ title: Linux sar 统计系统性能(网卡、内存和交换空间、CPU资源�
 date: 2014-12-31T13:44:17+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=256
+guid: http://www.wanglijie.cn/?p=256
 permalink: '/2014/12/linux-sar-%e7%bb%9f%e8%ae%a1%e7%b3%bb%e7%bb%9f%e6%80%a7%e8%83%bd%e7%bd%91%e5%8d%a1%e3%80%81%e5%86%85%e5%ad%98%e5%92%8c%e4%ba%a4%e6%8d%a2%e7%a9%ba%e9%97%b4%e3%80%81cpu%e8%b5%84%e6%ba%90%e7%ad%89.html'
 views:
   - "435"

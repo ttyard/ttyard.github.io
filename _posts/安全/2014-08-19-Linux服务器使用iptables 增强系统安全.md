@@ -4,7 +4,7 @@ title: Linux服务器使用iptables 增强系统安全
 date: 2014-08-19T13:20:38+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=170
+guid: http://www.wanglijie.cn/?p=170
 permalink: '/2014/08/linux%e6%9c%8d%e5%8a%a1%e5%99%a8%e4%bd%bf%e7%94%a8iptables-%e5%a2%9e%e5%bc%ba%e7%b3%bb%e7%bb%9f%e5%ae%89%e5%85%a8.html'
 views:
   - "353"

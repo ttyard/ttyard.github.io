@@ -4,7 +4,7 @@ title: Shadowsocks轻量级socket5代理服务配置
 date: 2015-05-30T13:06:28+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=283
+guid: http://www.wanglijie.cn/?p=283
 permalink: '/2015/05/shadowsocks%e8%bd%bb%e9%87%8f%e7%ba%a7socket5%e4%bb%a3%e7%90%86%e6%9c%8d%e5%8a%a1%e9%85%8d%e7%bd%ae.html'
 views:
   - "456"
@@ -152,7 +152,7 @@ sslocal -c /etc/shadowsocks/config.json
   
 如果上面的下载连接无法访问，从此处下载<a href="http://www-aixiuyun.qiniudn.com/Shadowsocks.zip" target="_blank">Windows shadowsocks</a>
   
-[<img class="aligncenter size-full wp-image-332" src="http://www.wanglijie.cn/wp-content/uploads/2015/05/QQ拼音截图未命名.jpg" alt="QQ拼音截图未命名" width="281" height="307" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/05/QQ拼音截图未命名.jpg 281w, http://www.wanglijie.cn/wp-content/uploads/2015/05/QQ拼音截图未命名-275x300.jpg 275w" sizes="(max-width: 281px) 100vw, 281px" />](http://www.wanglijie.cn/wp-content/uploads/2015/05/QQ拼音截图未命名.jpg)
+[<img class="aligncenter size-full wp-image-332" src="http://images.wanglijie.cn/public/img/posts/2015/05/QQ拼音截图未命名.jpg" alt="QQ拼音截图未命名" width="281" height="307" srcset="http://images.wanglijie.cn/public/img/posts/2015/05/QQ拼音截图未命名.jpg 281w, http://images.wanglijie.cn/public/img/posts/2015/05/QQ拼音截图未命名-275x300.jpg 275w" sizes="(max-width: 281px) 100vw, 281px" />](http://images.wanglijie.cn/public/img/posts/2015/05/QQ拼音截图未命名.jpg)
 
 参考连接：<a href="https://wiki.archlinux.org/index.php/Shadowsocks_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)" target="_blank">archlinux</a>
 

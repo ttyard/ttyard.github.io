@@ -4,7 +4,7 @@ title: 使用Powershell自动过滤暴力破解IP
 date: 2015-06-18T14:37:13+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=301
+guid: http://www.wanglijie.cn/?p=301
 permalink: '/2015/06/%e4%bd%bf%e7%94%a8powershell%e8%87%aa%e5%8a%a8%e8%bf%87%e6%bb%a4%e6%9a%b4%e5%8a%9b%e7%a0%b4%e8%a7%a3ip.html'
 views:
   - "354"
@@ -21,7 +21,7 @@ tags:
 
 在开始菜单运行中，输入：fw.msc，打开防火墙管理程序，在所有区域启用防火墙规则。
 
-[<img class="aligncenter size-full wp-image-302" src="http://www.wanglijie.cn/wp-content/uploads/2015/06/图1.jpg" alt="图1" width="920" height="616" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/06/图1.jpg 920w, http://www.wanglijie.cn/wp-content/uploads/2015/06/图1-300x201.jpg 300w" sizes="(max-width: 920px) 100vw, 920px" />](http://www.wanglijie.cn/wp-content/uploads/2015/06/图1.jpg) 
+[<img class="aligncenter size-full wp-image-302" src="http://images.wanglijie.cn/public/img/posts/2015/06/图1.jpg" alt="图1" width="920" height="616" srcset="http://images.wanglijie.cn/public/img/posts/2015/06/图1.jpg 920w, http://images.wanglijie.cn/public/img/posts/2015/06/图1-300x201.jpg 300w" sizes="(max-width: 920px) 100vw, 920px" />](http://images.wanglijie.cn/public/img/posts/2015/06/图1.jpg)
 
 ## 2.创建防火墙入站规则
 
@@ -33,7 +33,7 @@ tags:
   
 作用域：远程IP地址，选择“下列IP地址”，初始配置时必须填写一个IP。否则防火墙将阻止所有入站通讯。
 
-[<img class="aligncenter size-full wp-image-303" src="http://www.wanglijie.cn/wp-content/uploads/2015/06/图2.jpg" alt="图2" width="931" height="618" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/06/图2.jpg 931w, http://www.wanglijie.cn/wp-content/uploads/2015/06/图2-300x199.jpg 300w" sizes="(max-width: 931px) 100vw, 931px" />](http://www.wanglijie.cn/wp-content/uploads/2015/06/图2.jpg)
+[<img class="aligncenter size-full wp-image-303" src="http://images.wanglijie.cn/public/img/posts/2015/06/图2.jpg" alt="图2" width="931" height="618" srcset="http://images.wanglijie.cn/public/img/posts/2015/06/图2.jpg 931w, http://images.wanglijie.cn/public/img/posts/2015/06/图2-300x199.jpg 300w" sizes="(max-width: 931px) 100vw, 931px" />](http://images.wanglijie.cn/public/img/posts/2015/06/图2.jpg)
 
 ## 3.下载并运行脚本
 

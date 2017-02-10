@@ -4,7 +4,7 @@ title: Amazon EC2 RHEL 服务器搭建PPTP VPN与SNAT
 date: 2014-11-18T15:21:31+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=215
+guid: http://www.wanglijie.cn/?p=215
 permalink: '/2014/11/amazon-ec2-ubuntu-%e6%9c%8d%e5%8a%a1%e5%99%a8%e6%90%ad%e5%bb%bapptp-vpn%e4%b8%8esnat.html'
 views:
   - "470"

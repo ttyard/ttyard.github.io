@@ -4,7 +4,7 @@ title: XenServer强制终止假死挂起(hang)的虚拟机VM
 date: 2014-11-19T14:52:03+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=223
+guid: http://www.wanglijie.cn/?p=223
 permalink: '/2014/11/xenserver%e5%bc%ba%e5%88%b6%e7%bb%88%e6%ad%a2%e5%81%87%e6%ad%bb%e6%8c%82%e8%b5%b7hang%e7%9a%84%e8%99%9a%e6%8b%9f%e6%9c%bavm.html'
 views:
   - "626"

@@ -17,7 +17,7 @@ tags:
 ---
 本文将主要介绍使用openssl、JKS2PFX、Keytool命令完成常用各类证书格式（.PFX , .cer或crt , .key , .jks ）的相互转换。
   
-<img src="http://www.wanglijie.cn/wp-content/uploads/2016/07/info05031501.gif" alt="info05031501" width="233" height="236" class="aligncenter size-full wp-image-590" />
+<img src="http://images.wanglijie.cn/public/img/posts/2016/07/info05031501.gif" alt="info05031501" width="233" height="236" class="aligncenter size-full wp-image-590" />
 
 ## 1: pfx转换cer，crt，key
 

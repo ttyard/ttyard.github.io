@@ -4,7 +4,7 @@ title: Kali Linux USB多分区持久存储设备
 date: 2015-06-27T23:37:05+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=314
+guid: http://www.wanglijie.cn/?p=314
 permalink: '/2015/06/kali-linux-usb%e5%a4%9a%e5%88%86%e5%8c%ba%e6%8c%81%e4%b9%85%e5%ad%98%e5%82%a8%e8%ae%be%e5%a4%87.html'
 views:
   - "675"
@@ -16,7 +16,7 @@ tags:
 ---
 Kali Linux是一款 集合多种安全测试工具的Linux发行版本，本文将介绍如何在USB移动存储设备中建立“加密分区”和“非加密普通分区”用来持久保存系统运行时创建的数据。如下图所示：
   
-[<img class="aligncenter size-full wp-image-315" src="http://www.wanglijie.cn/wp-content/uploads/2015/06/kali-multi-usb-persistence.png" alt="kali-multi-usb-persistence" width="2991" height="1475" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/06/kali-multi-usb-persistence.png 2991w, http://www.wanglijie.cn/wp-content/uploads/2015/06/kali-multi-usb-persistence-300x148.png 300w, http://www.wanglijie.cn/wp-content/uploads/2015/06/kali-multi-usb-persistence-1024x505.png 1024w" sizes="(max-width: 2991px) 100vw, 2991px" />](http://www.wanglijie.cn/wp-content/uploads/2015/06/kali-multi-usb-persistence.png)
+[<img class="aligncenter size-full wp-image-315" src="http://images.wanglijie.cn/public/img/posts/2015/06/kali-multi-usb-persistence.png" alt="kali-multi-usb-persistence" width="2991" height="1475" srcset="http://images.wanglijie.cn/public/img/posts/2015/06/kali-multi-usb-persistence.png 2991w, http://images.wanglijie.cn/public/img/posts/2015/06/kali-multi-usb-persistence-300x148.png 300w, http://images.wanglijie.cn/public/img/posts/2015/06/kali-multi-usb-persistence-1024x505.png 1024w" sizes="(max-width: 2991px) 100vw, 2991px" />](http://images.wanglijie.cn/public/img/posts/2015/06/kali-multi-usb-persistence.png)
   
 为了完成本次工作，需要准备kali linux iso镜像、U盘8G或16GB。本文使用32GB的U盘。
 
@@ -118,9 +118,9 @@ umount /mnt/usb
   
 插入U盘后，需要选择从U盘启动，在出现启动界面boot menu，按TAB键编辑启动菜单。通过输入不同的persistence-label=work 或 persistence-label=persistence来启动普通分区或加密分区。
   
-[<img class="aligncenter size-full wp-image-316" src="http://www.wanglijie.cn/wp-content/uploads/2015/06/persistence-work.png" alt="persistence-work" width="1278" height="610" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/06/persistence-work.png 1278w, http://www.wanglijie.cn/wp-content/uploads/2015/06/persistence-work-300x143.png 300w, http://www.wanglijie.cn/wp-content/uploads/2015/06/persistence-work-1024x489.png 1024w" sizes="(max-width: 1278px) 100vw, 1278px" />
+[<img class="aligncenter size-full wp-image-316" src="http://images.wanglijie.cn/public/img/posts/2015/06/persistence-work.png" alt="persistence-work" width="1278" height="610" srcset="http://images.wanglijie.cn/public/img/posts/2015/06/persistence-work.png 1278w, http://images.wanglijie.cn/public/img/posts/2015/06/persistence-work-300x143.png 300w, http://images.wanglijie.cn/public/img/posts/2015/06/persistence-work-1024x489.png 1024w" sizes="(max-width: 1278px) 100vw, 1278px" />
   
-](http://www.wanglijie.cn/wp-content/uploads/2015/06/persistence-work.png) 
+](http://images.wanglijie.cn/public/img/posts/2015/06/persistence-work.png)
   
 <a href="https://www.offensive-security.com/kali-linux/usb-multiple-persistent-stores/" target="_blank">原文链接</a>
 

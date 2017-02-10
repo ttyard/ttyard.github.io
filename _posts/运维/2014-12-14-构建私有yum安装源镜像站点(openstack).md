@@ -4,7 +4,7 @@ title: 构建私有yum安装源镜像站点(openstack)
 date: 2014-12-14T12:04:51+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=248
+guid: http://www.wanglijie.cn/?p=248
 permalink: '/2014/12/%e6%9e%84%e5%bb%ba%e7%a7%81%e6%9c%89yum%e5%ae%89%e8%a3%85%e6%ba%90%e9%95%9c%e5%83%8f%e7%ab%99%e7%82%b9openstack.html'
 views:
   - "952"

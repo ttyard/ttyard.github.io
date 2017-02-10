@@ -18,7 +18,7 @@ ES通过设置【节点的名字】和【集群的名字】，就能自动的组
   
 如果用户想要管理查看集群的状态，可以通过一些REST API来实现。
   
-<img src="http://www.wanglijie.cn/wp-content/uploads/2016/07/elasticsearch-logo.png" alt="elasticsearch-logo" width="1281" height="593" class="aligncenter size-full wp-image-610" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/07/elasticsearch-logo.png 1281w, http://www.wanglijie.cn/wp-content/uploads/2016/07/elasticsearch-logo-300x139.png 300w, http://www.wanglijie.cn/wp-content/uploads/2016/07/elasticsearch-logo-768x356.png 768w, http://www.wanglijie.cn/wp-content/uploads/2016/07/elasticsearch-logo-1024x474.png 1024w" sizes="(max-width: 1281px) 100vw, 1281px" />
+<img src="http://images.wanglijie.cn/public/img/posts/2016/07/elasticsearch-logo.png" alt="elasticsearch-logo" width="1281" height="593" class="aligncenter size-full wp-image-610" srcset="http://images.wanglijie.cn/public/img/posts/2016/07/elasticsearch-logo.png 1281w, http://images.wanglijie.cn/public/img/posts/2016/07/elasticsearch-logo-300x139.png 300w, http://images.wanglijie.cn/public/img/posts/2016/07/elasticsearch-logo-768x356.png 768w, http://images.wanglijie.cn/public/img/posts/2016/07/elasticsearch-logo-1024x474.png 1024w" sizes="(max-width: 1281px) 100vw, 1281px" />
 
 ## REST API用途
 

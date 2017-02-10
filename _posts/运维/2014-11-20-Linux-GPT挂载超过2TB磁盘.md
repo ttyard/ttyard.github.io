@@ -4,7 +4,7 @@ title: Linux GPT挂载超过2TB磁盘
 date: 2014-11-20T14:51:51+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=230
+guid: http://www.wanglijie.cn/?p=230
 permalink: '/2014/11/linux-gpt%e6%8c%82%e8%bd%bd%e8%b6%85%e8%bf%872tb%e7%a3%81%e7%9b%98.html'
 views:
   - "404"

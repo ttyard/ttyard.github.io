@@ -4,7 +4,7 @@ title: CentOS6/RedHat6新增网卡识别问题
 date: 2014-12-10T11:09:12+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=245
+guid: http://www.wanglijie.cn/?p=245
 permalink: '/2014/12/centos6redhat6%e6%96%b0%e5%a2%9e%e7%bd%91%e5%8d%a1%e8%af%86%e5%88%ab%e9%97%ae%e9%a2%98.html'
 views:
   - "392"

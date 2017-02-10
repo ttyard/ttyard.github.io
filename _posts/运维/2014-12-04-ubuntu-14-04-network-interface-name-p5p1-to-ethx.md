@@ -4,7 +4,7 @@ title: Ubuntu 14.04 Server优化与使用问题解决
 date: 2014-12-04T13:33:03+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=239
+guid: http://www.wanglijie.cn/?p=239
 permalink: /2014/12/ubuntu-14-04-network-interface-name-p5p1-to-ethx.html
 views:
   - "495"

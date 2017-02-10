@@ -4,7 +4,7 @@ title: 构建Linux Skype Message消息推送API服务（Zabbix集成告警）
 date: 2015-08-14T11:09:36+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=373
+guid: http://www.wanglijie.cn/?p=373
 permalink: '/2015/08/%e6%9e%84%e5%bb%balinux-skype-message%e6%b6%88%e6%81%af%e6%8e%a8%e9%80%81api%e6%9c%8d%e5%8a%a1.html'
 views:
   - "595"
@@ -17,7 +17,7 @@ tags:
 <p>在工作中，由于监控系统需要能够通过即时聊天工具发送告警的信息，同时在工作中主要使用Skype进行内部的沟通交流，因此萌发了将Zabbix与Skype进行整合的想法。<br />
 本文运行环境基于Ubuntu 14.04 LTS，其他Linux平台安装方式可能略微不同。可以将Skype API服务器部署在Linux和Windows服务器上，也可以和Zabbix部署在同一台机器上面。只需要能够顺利调用http://IP:5000/msg接口即可。</p>
 <h3>系统架构说明:</h3>
-<p style="text-align: center;"><a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/1-skype-架构图.png"><img class="aligncenter  wp-image-374" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/1-skype-架构图.png" alt="1-skype-架构图" width="681" height="354" /></a><br />
+<p style="text-align: center;"><a href="http://images.wanglijie.cn/public/img/posts/2015/08/1-skype-架构图.png"><img class="aligncenter  wp-image-374" src="http://images.wanglijie.cn/public/img/posts/2015/08/1-skype-架构图.png" alt="1-skype-架构图" width="681" height="354" /></a><br />
 图1-Skype架构图</p>
 <h2>一、 安装基础环境和Skype</h2>
 <p>在Linux系统中运行Skype需要使用xvfb启动x11图形界面才能正常运行。所有在ubuntu系统中，使用下面的命令进行安装，具体如下：</p>
@@ -128,12 +128,12 @@ Write password to /home/skype/.x11vnc/passwd?  [y]/n y
 </pre>
 <h3>2.5 VNC远程登录</h3>
 <p>在远程的桌面系统，通过VNC使用skype用户远程登录到服务器，默认端口5900，并在Skype中输入帐号密码，并修改默认的配置。</p>
-<p style="text-align: center;"><a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/2-VNC-connection.png"><img class="aligncenter size-full wp-image-375" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/2-VNC-connection.png" alt="2-VNC-connection" width="415" height="214" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/08/2-VNC-connection.png 415w, http://www.wanglijie.cn/wp-content/uploads/2015/08/2-VNC-connection-300x155.png 300w" sizes="(max-width: 415px) 100vw, 415px" /></a><br />
+<p style="text-align: center;"><a href="http://images.wanglijie.cn/public/img/posts/2015/08/2-VNC-connection.png"><img class="aligncenter size-full wp-image-375" src="http://images.wanglijie.cn/public/img/posts/2015/08/2-VNC-connection.png" alt="2-VNC-connection" width="415" height="214" srcset="http://images.wanglijie.cn/public/img/posts/2015/08/2-VNC-connection.png 415w, http://images.wanglijie.cn/public/img/posts/2015/08/2-VNC-connection-300x155.png 300w" sizes="(max-width: 415px) 100vw, 415px" /></a><br />
 图2-1 桌面客户端VNC Viewer远程登录服务器</p>
 <h3>2.6 Skype初始化配置</h3>
-<p style="text-align: center;"><a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/3-配置Skype选择默认语言.png"><img class="aligncenter  wp-image-376" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/3-配置Skype选择默认语言.png" alt="3-配置Skype选择默认语言" width="654" height="513" /></a></p>
+<p style="text-align: center;"><a href="http://images.wanglijie.cn/public/img/posts/2015/08/3-配置Skype选择默认语言.png"><img class="aligncenter  wp-image-376" src="http://images.wanglijie.cn/public/img/posts/2015/08/3-配置Skype选择默认语言.png" alt="3-配置Skype选择默认语言" width="654" height="513" /></a></p>
 <p style="text-align: center;">图2-2 配置Skype，选择默认语言</p>
-<p style="text-align: center;"><a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/4-skype-login.png"><img class="aligncenter  wp-image-377" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/4-skype-login.png" alt="4-skype-login" width="682" height="530" /></a></p>
+<p style="text-align: center;"><a href="http://images.wanglijie.cn/public/img/posts/2015/08/4-skype-login.png"><img class="aligncenter  wp-image-377" src="http://images.wanglijie.cn/public/img/posts/2015/08/4-skype-login.png" alt="4-skype-login" width="682" height="530" /></a></p>
 <p style="text-align: center;">图2-3 配置登录的用户名和密码</p>
 <p>注意：并勾选“Sign me when Skype status”</p>
 <h3>2.7 配置Skype隐私选项</h3>
@@ -142,7 +142,7 @@ Write password to /home/skype/.x11vnc/passwd?  [y]/n y
 <li>Only people on my list can write me</li>
 <li>Only people on my list can call me</li>
 </ul>
-<p style="text-align: center;"><a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/5-skype-configuration.png"><img class="aligncenter  wp-image-378" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/5-skype-configuration.png" alt="5-skype-configuration" width="704" height="554" /></a></p>
+<p style="text-align: center;"><a href="http://images.wanglijie.cn/public/img/posts/2015/08/5-skype-configuration.png"><img class="aligncenter  wp-image-378" src="http://images.wanglijie.cn/public/img/posts/2015/08/5-skype-configuration.png" alt="5-skype-configuration" width="704" height="554" /></a></p>
 <p style="text-align: center;">图2-4 Skype Privacy</p>
 <h2>三、 安装Sevabot</h2>
 <p>首先使用Skype用户登录的服务器。sevabot默认需要使用python virtualenv配置环境。</p>
@@ -165,7 +165,7 @@ skype@ubuntu14:~/sevabot$ cp settings.py.example settings.py
 skype@ubuntu14:~/sevabot$vim settings.py
 
 </pre>
-<p><a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/6-settings.py_.png"><img class="aligncenter size-full wp-image-379" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/6-settings.py_.png" alt="6-settings.py" width="523" height="318" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/08/6-settings.py_.png 523w, http://www.wanglijie.cn/wp-content/uploads/2015/08/6-settings.py_-300x182.png 300w" sizes="(max-width: 523px) 100vw, 523px" /></a></p>
+<p><a href="http://images.wanglijie.cn/public/img/posts/2015/08/6-settings.py_.png"><img class="aligncenter size-full wp-image-379" src="http://images.wanglijie.cn/public/img/posts/2015/08/6-settings.py_.png" alt="6-settings.py" width="523" height="318" srcset="http://images.wanglijie.cn/public/img/posts/2015/08/6-settings.py_.png 523w, http://images.wanglijie.cn/public/img/posts/2015/08/6-settings.py_-300x182.png 300w" sizes="(max-width: 523px) 100vw, 523px" /></a></p>
 <p style="text-align: center;">图3-1 settings.py配置</p>
 <p>参数说明：<br />
 SHARED_SECRET:密钥，用户登录Web控制台和远程调用时使用的密码。<br />
@@ -177,16 +177,16 @@ HTTP_PORT：程序监听的端口号。</p>
 Started Sevabot web server process id 
 </pre>
 <p>服务启动完毕后，立即登录VNC到服务器，在Skype中接受Skype4Py的API授权请求，并勾选“Remember this selection”<br />
-<a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/7-allow-skype4py-api.png"><img class="aligncenter  wp-image-380" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/7-allow-skype4py-api.png" alt="7-allow skype4py api" width="726" height="564" /></a></p>
+<a href="http://images.wanglijie.cn/public/img/posts/2015/08/7-allow-skype4py-api.png"><img class="aligncenter  wp-image-380" src="http://images.wanglijie.cn/public/img/posts/2015/08/7-allow-skype4py-api.png" alt="7-allow skype4py api" width="726" height="564" /></a></p>
 <p style="text-align: center;">图3-2 Skye4Py API请求授权</p>
 <p>配置完毕后，停止VNC Server的服务：</p>
 <pre class="prettyprint linenums">skype@ubuntu14:~$ ~/sevabot/scripts/start-vnc.sh start
 </pre>
 <p>启动完毕后，确认服务和端口正常运行，在浏览器中输入IP:5000即可打开控制台。<br />
-<a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/8-http-api-services.png"><img class="aligncenter  wp-image-381" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/8-http-api-services.png" alt="8-http-api-services" width="551" height="635" /></a></p>
+<a href="http://images.wanglijie.cn/public/img/posts/2015/08/8-http-api-services.png"><img class="aligncenter  wp-image-381" src="http://images.wanglijie.cn/public/img/posts/2015/08/8-http-api-services.png" alt="8-http-api-services" width="551" height="635" /></a></p>
 <p style="text-align: center;">图3-3 Web控制台登录</p>
 <p>在Skype中，将需要与之通讯的好友加入到通讯录中，并向他发送一条“Hello”信息后，相关的Chat ID就会在下面的列表中显示。有时会出现同一个用户有2个Chat Id的问题，现在还不知道问什么。<br />
-<a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/9-skype-chatid-viewer.png"><img class="aligncenter  wp-image-382" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/9-skype-chatid-viewer.png" alt="9-skype-chatid-viewer" width="527" height="400" /></a></p>
+<a href="http://images.wanglijie.cn/public/img/posts/2015/08/9-skype-chatid-viewer.png"><img class="aligncenter  wp-image-382" src="http://images.wanglijie.cn/public/img/posts/2015/08/9-skype-chatid-viewer.png" alt="9-skype-chatid-viewer" width="527" height="400" /></a></p>
 <p style="text-align: center;">图3-4 Chat ID</p>
 <h2>四、 Zabbix集成Sevabot</h2>
 <h3> 创建Skype告警脚本</h3>
@@ -224,13 +224,13 @@ curl $msgaddress --data-urlencode chat="$chat" --data-urlencode msg="$msg" --dat
 </pre>
 <h3>新增Zabbix Media Type</h3>
 <p>依次打开：Administrator&gt;Media types&gt; Create media type：<br />
-<a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/10-zabbix-1.png"><img class="aligncenter  wp-image-383" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/10-zabbix-1.png" alt="10-zabbix-1" width="626" height="199" /></a></p>
+<a href="http://images.wanglijie.cn/public/img/posts/2015/08/10-zabbix-1.png"><img class="aligncenter  wp-image-383" src="http://images.wanglijie.cn/public/img/posts/2015/08/10-zabbix-1.png" alt="10-zabbix-1" width="626" height="199" /></a></p>
 <h3>新增人员及Skype Chat ID</h3>
 <p>进入Zabbix控制台，依次打开：administrator &gt; Users &gt; Users，选择需要新增Skype Chat ID的成员。<br />
-<a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/11-zabbix-21.png"><img class="aligncenter size-full wp-image-395" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/11-zabbix-21.png" alt="11-zabbix-2" width="555" height="393" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/08/11-zabbix-21.png 555w, http://www.wanglijie.cn/wp-content/uploads/2015/08/11-zabbix-21-300x212.png 300w" sizes="(max-width: 555px) 100vw, 555px" /></a></p>
+<a href="http://images.wanglijie.cn/public/img/posts/2015/08/11-zabbix-21.png"><img class="aligncenter size-full wp-image-395" src="http://images.wanglijie.cn/public/img/posts/2015/08/11-zabbix-21.png" alt="11-zabbix-2" width="555" height="393" srcset="http://images.wanglijie.cn/public/img/posts/2015/08/11-zabbix-21.png 555w, http://images.wanglijie.cn/public/img/posts/2015/08/11-zabbix-21-300x212.png 300w" sizes="(max-width: 555px) 100vw, 555px" /></a></p>
 <h3>配置告警发送动作</h3>
 <p>依次打开：Configuration &gt; Actions &gt; create action，进入Operations新增：<br />
-<a href="http://www.wanglijie.cn/wp-content/uploads/2015/08/13-zabbix-3.png"><img class="aligncenter  wp-image-385" src="http://www.wanglijie.cn/wp-content/uploads/2015/08/13-zabbix-3.png" alt="13-zabbix-3" width="692" height="503" /></a></p>
+<a href="http://images.wanglijie.cn/public/img/posts/2015/08/13-zabbix-3.png"><img class="aligncenter  wp-image-385" src="http://images.wanglijie.cn/public/img/posts/2015/08/13-zabbix-3.png" alt="13-zabbix-3" width="692" height="503" /></a></p>
 <p>至此，所有Skype和Zabbix的集成就已经配置完成了。需要注意的是微软可能在未来会封锁Skype第三方私有API，这将会导致本文的配置方法可能在未来会失效。</p>
 <p>参考文档：<br />
 https://sevabot-skype-bot.readthedocs.org/en/latest/ubuntu.html</p>

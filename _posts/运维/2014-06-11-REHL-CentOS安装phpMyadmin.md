@@ -4,7 +4,7 @@ title: REHL/CentOS安装phpMyadmin
 date: 2014-06-11T15:34:38+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=27
+guid: http://www.wanglijie.cn/?p=27
 permalink: '/2014/06/rehlcentos%e5%ae%89%e8%a3%85phpmyadmin.html'
 views:
   - "334"

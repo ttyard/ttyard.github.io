@@ -4,7 +4,7 @@ title: 'Ubuntu安装openntpd报错：Starting openntpd: /etc/openntpd/ntpd.conf:
 date: 2015-02-07T21:07:17+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=273
+guid: http://www.wanglijie.cn/?p=273
 permalink: '/2015/02/ubuntu%e5%ae%89%e8%a3%85openntpd%e6%8a%a5%e9%94%99%ef%bc%9astarting-openntpd-etcopenntpdntpd-conf-permission-denied.html'
 views:
   - "471"

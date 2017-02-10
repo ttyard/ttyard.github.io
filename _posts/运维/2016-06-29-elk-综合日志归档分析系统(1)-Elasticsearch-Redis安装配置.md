@@ -20,7 +20,7 @@ ELK全称（elasticsearch、logstash、kibana），是目前广泛使用的日�
 
 ## 1. ELK架构设计
 
-[<img class="aligncenter size-full wp-image-566" src="http://www.wanglijie.cn/wp-content/uploads/2016/06/ELK架构图.jpg" alt="ELK架构图" width="653" height="619" srcset="http://www.wanglijie.cn/wp-content/uploads/2016/06/ELK架构图.jpg 653w, http://www.wanglijie.cn/wp-content/uploads/2016/06/ELK架构图-300x284.jpg 300w" sizes="(max-width: 653px) 100vw, 653px" />](http://www.wanglijie.cn/wp-content/uploads/2016/06/ELK架构图.jpg)
+[<img class="aligncenter size-full wp-image-566" src="http://images.wanglijie.cn/public/img/posts/2016/06/ELK架构图.jpg" alt="ELK架构图" width="653" height="619" srcset="http://images.wanglijie.cn/public/img/posts/2016/06/ELK架构图.jpg 653w, http://images.wanglijie.cn/public/img/posts/2016/06/ELK架构图-300x284.jpg 300w" sizes="(max-width: 653px) 100vw, 653px" />](http://images.wanglijie.cn/public/img/posts/2016/06/ELK架构图.jpg)
 
 ## 2. 安装Java运行环境
 
@@ -188,7 +188,7 @@ Installed head into c:\Server\elasticsearch-2.1.1\plugins\head
 
 安装完毕后，在浏览器地址栏输入http://ip:9200/_plugin/head/ 即可打开head集群管理工具，如下图所示：
   
-[<img class="aligncenter wp-image-579" src="http://www.wanglijie.cn/wp-content/uploads/2016/06/elastic-head-1.png" alt="elastic-head" width="790" height="562" />](http://www.wanglijie.cn/wp-content/uploads/2016/06/elastic-head-1.png)
+[<img class="aligncenter wp-image-579" src="http://images.wanglijie.cn/public/img/posts/2016/06/elastic-head-1.png" alt="elastic-head" width="790" height="562" />](http://images.wanglijie.cn/public/img/posts/2016/06/elastic-head-1.png)
 
 ### 3.3.3 安全配置
 

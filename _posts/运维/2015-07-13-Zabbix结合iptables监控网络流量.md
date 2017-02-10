@@ -4,7 +4,7 @@ title: Zabbix结合iptables监控网络流量
 date: 2015-07-13T16:27:34+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=344
+guid: http://www.wanglijie.cn/?p=344
 permalink: '/2015/07/zabbix%e7%bb%93%e5%90%88iptables%e7%9b%91%e6%8e%a7%e7%bd%91%e7%bb%9c%e6%b5%81%e9%87%8f.html'
 views:
   - "508"
@@ -66,7 +66,7 @@ Linux操作系统默认情况下，iptables只能是超级管理员root才能运
 
 打开需要添加监控项目的主机，新增上面定义的KEY，示例如下所示：
   
-[<img src="http://www.wanglijie.cn/wp-content/uploads/2015/07/ITEN.jpg" alt="ITEN" width="736" height="536" class="aligncenter size-full wp-image-347" srcset="http://www.wanglijie.cn/wp-content/uploads/2015/07/ITEN.jpg 736w, http://www.wanglijie.cn/wp-content/uploads/2015/07/ITEN-300x218.jpg 300w" sizes="(max-width: 736px) 100vw, 736px" />](http://www.wanglijie.cn/wp-content/uploads/2015/07/ITEN.jpg)
+[<img src="http://images.wanglijie.cn/public/img/posts/2015/07/ITEN.jpg" alt="ITEN" width="736" height="536" class="aligncenter size-full wp-image-347" srcset="http://images.wanglijie.cn/public/img/posts/2015/07/ITEN.jpg 736w, http://images.wanglijie.cn/public/img/posts/2015/07/ITEN-300x218.jpg 300w" sizes="(max-width: 736px) 100vw, 736px" />](http://images.wanglijie.cn/public/img/posts/2015/07/ITEN.jpg)
 
 完成后保存自定义的KEY，过一会就能够采集到数据了。
 

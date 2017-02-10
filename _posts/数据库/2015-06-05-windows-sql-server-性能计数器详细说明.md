@@ -4,7 +4,7 @@ title: Windows SQL Server 性能计数器详细说明
 date: 2015-06-05T09:09:54+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=290
+guid: http://www.wanglijie.cn/?p=290
 permalink: '/2015/06/windows-sql-server-%e6%80%a7%e8%83%bd%e8%ae%a1%e6%95%b0%e5%99%a8%e8%af%a6%e7%bb%86%e8%af%b4%e6%98%8e.html'
 views:
   - "344"

@@ -4,7 +4,7 @@ title: 云计算网络虚拟化之Open vSwitch
 date: 2014-07-28T22:24:30+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=32
+guid: http://www.wanglijie.cn/?p=32
 permalink: '/2014/07/%e4%ba%91%e8%ae%a1%e7%ae%97%e7%bd%91%e7%bb%9c%e8%99%9a%e6%8b%9f%e5%8c%96%e4%b9%8bopen-vswitch.html'
 views:
   - "508"
@@ -25,7 +25,7 @@ tags:
   
 Open vSwitch的目标，是做一个具有产品级质量的多层虚拟交换机。通过可编程扩展，可以实现大规模网络的自动化（配置、管理、维护）。它支持现有标准管理接口和协议（比如netFlow，sFlow，SPAN，RSPAN，CLI，LACP，802.1ag等，熟悉物理网络维护的管理员可以毫不费力地通过Open vSwitch转向虚拟网络管理）。
 
-<img class="alignnone  wp-image-33" src="http://www.wanglijie.cn/wp-content/uploads/2014/07/213512822-300x207.jpg" alt="213512822" width="426" height="294" srcset="http://www.wanglijie.cn/wp-content/uploads/2014/07/213512822-300x207.jpg 300w, http://www.wanglijie.cn/wp-content/uploads/2014/07/213512822.jpg 465w" sizes="(max-width: 426px) 100vw, 426px" />
+<img class="alignnone  wp-image-33" src="http://images.wanglijie.cn/public/img/posts/2014/07/213512822-300x207.jpg" alt="213512822" width="426" height="294" srcset="http://images.wanglijie.cn/public/img/posts/2014/07/213512822-300x207.jpg 300w, http://images.wanglijie.cn/public/img/posts/2014/07/213512822.jpg 465w" sizes="(max-width: 426px) 100vw, 426px" />
 
 <p style="text-align: center;">
   图一：Open vSwitch示意图
@@ -73,7 +73,7 @@ ovs-pki &#8212; 创建和管理公钥框架；
   
 tcpdump的补丁 &#8212; 解析OpenFlow的消息；
 
-[<img class="alignnone size-medium wp-image-34" src="http://www.wanglijie.cn/wp-content/uploads/2014/07/213438993-300x294.jpg" alt="213438993" width="300" height="294" srcset="http://www.wanglijie.cn/wp-content/uploads/2014/07/213438993-300x294.jpg 300w, http://www.wanglijie.cn/wp-content/uploads/2014/07/213438993.jpg 519w" sizes="(max-width: 300px) 100vw, 300px" />](http://www.wanglijie.cn/wp-content/uploads/2014/07/213438993.jpg)
+[<img class="alignnone size-medium wp-image-34" src="http://images.wanglijie.cn/public/img/posts/2014/07/213438993-300x294.jpg" alt="213438993" width="300" height="294" srcset="http://images.wanglijie.cn/public/img/posts/2014/07/213438993-300x294.jpg 300w, http://images.wanglijie.cn/public/img/posts/2014/07/213438993.jpg 519w" sizes="(max-width: 300px) 100vw, 300px" />](http://images.wanglijie.cn/public/img/posts/2014/07/213438993.jpg)
 
 需求决定产品，正是由于在企业级云中，需要各种丰富的网络功能，VMware才于n年前就推出了vSwitch、vDS等虚拟交换机。正是看到了云中的网络是一块大市场，Cisco才与VMware紧密合作，以partner的形式基于VMware kernel API开发出了自己的分布式虚拟交换机Nexus 1000V（功能对应于VMware的vDS）。可惜的是，这两款产品都是收费的。Citrix倒是基于Open vSwitch快速追赶，推出了自己的Distributed Virtual Switch解决方案。但是不好意思，也是收费的。开源云的标杆OpenStack去年下半年推出了一项宏大的计划，启动了Quantum项目，志在通过引入Open vSwitch，为Open Stack Network模块勾勒出“Connectivity as a service”的动人前景。有时间的话，会再单独开一篇文章讨论。
 

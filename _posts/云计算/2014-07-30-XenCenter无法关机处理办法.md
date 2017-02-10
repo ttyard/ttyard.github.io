@@ -4,7 +4,7 @@ title: XenCenter 无法关机处理办法
 date: 2014-07-30T15:21:28+00:00
 author: 深海游鱼
 layout: post
-guid: http://www.aixiuyun.com/?p=37
+guid: http://www.wanglijie.cn/?p=37
 permalink: '/2014/07/xencenter-%e6%97%a0%e6%b3%95%e5%85%b3%e6%9c%ba%e5%a4%84%e7%90%86%e5%8a%9e%e6%b3%95.html'
 views:
   - "317"
