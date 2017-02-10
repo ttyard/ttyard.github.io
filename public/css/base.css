@@ -22,8 +22,9 @@ body, html {
   background-color: #1abc9c;
   /*background-image: url(/public/img/bg_grid.jpg);*/
   height: 100%;
-  padding-left: 0px;
+  padding: 0px;
   padding-right: 0px;
+  padding-top: 0px;
   text-align: center;
   /*box-shadow: inset -15px 0 20px -15px #77AEF4;*/
 }
@@ -70,10 +71,9 @@ body, html {
 
   background-color: #303030;
   height: 100%;
-  border-right: 2px solid #303030;
+  /*border-right: 10px solid #303030;*/
   overflow-y: auto;
-  font-color: #fff;
-  margin-top: 40px;
+  color: #fff;
 }
 
 /* 右侧内容栏 */
@@ -123,4 +123,12 @@ blockquote p {
 .show-commend {
   width: 100%;
   margin-bottom: 40px;
+}
+
+.logo {
+  padding: 20px 0px;
+}
+
+.navbanner {
+    
 }

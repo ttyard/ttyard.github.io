@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
@@ -13,42 +6,40 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 深海游鱼
+title: 王立杰的博客
 email: ttyard@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  这是我的个人站点.
+  记录和总结工作/生活中的知识储备.并把这些经验分享出来,希望能够帮你踏过一些坑。内容涉及云计算、网络技术、开发、JAVA、Python、系统运维、自动化运维与监控
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: ericwcn
-github_username:  ttyard
 rss_url: /pages/atom.xml
 
 # 作者信息
 author: 
-  name: 深海游鱼
+  name: wanglijie
   email: ttyard@gmail.com
-  link: http://painterlin.com
-  weibo: http://weibo.com/orangeissweet
+  link: http://www.wanglijie.cn
+  weibo: http://weibo.com/wljie
   github: http://github.com/ttyard
-  music: http://site.douban.com/linanya
-  linkedin: https://www.linkedin.com/pub/anya-lin/81/91/232
+  music:
+  linkedin: https://www.linkedin.com/
   
 # google analytics 设置
 ga:
-  id: UA-54262064-1 
-  url: painterlin.com
+  id: UA-91628081-1
+  url: www.wanglijie.cn
 
 # disqus 设置
 disqus:
-  shortname: painterlin
+  shortname: wljcn
 
 # 主题设置，自动激活某个标签
-active: 读书
+active: 运维
 
 # 首页除了最新文章外显示分类
 cates: 
-  - Optimization
-  - LaTeX
+  - 运维
+  - 云计算
 
 # 中文本地化
 locals:
@@ -58,8 +49,8 @@ locals:
   archive: 归档
 
 # gavatar头像及Favicon
-gavatar: /public/img/logo.jpg
-favicon: /favicon.ico
+gavatar: http://images.wanglijie.cn/public/img/logo.png
+favicon: http://images.wanglijie.cn/public/img/favicon.ico
   
   
 # Build settings
