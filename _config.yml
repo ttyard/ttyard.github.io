@@ -49,8 +49,8 @@ locals:
   archive: 归档
 
 # gavatar头像及Favicon
-gavatar: http://images.wanglijie.cn/public/img/logo.png
-favicon: http://images.wanglijie.cn/public/img/favicon.ico
+gavatar: /public/img/logo.png
+favicon: /public/img/favicon.ico
   
   
 # Build settings
