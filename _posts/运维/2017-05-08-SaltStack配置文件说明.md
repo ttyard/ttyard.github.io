@@ -1,15 +1,15 @@
 ---
-title: SaltStackÅäÖÃÎÄ¼şËµÃ÷
+title: SaltStacké…ç½®æ–‡ä»¶è¯´æ˜
 date: 2017-05-208T13:11:52+00:00
-author: Éîº£ÓÎÓã
+author: æ·±æµ·æ¸¸é±¼
 layout: post
 categories:
-  - ÔËÎ¬
+  - è¿ç»´
 ---
 
-# SaltStackÅäÖÃÎÄ¼şËµÃ÷
+# SaltStacké…ç½®æ–‡ä»¶è¯´æ˜
 
-# SaltStack MasterÅäÖÃÎÄ¼şÖĞÎÄËµÃ÷
+# SaltStack Masteré…ç½®æ–‡ä»¶ä¸­æ–‡è¯´æ˜
 ```
 ##### Primary configuration settings #####
 ##########################################
@@ -22,124 +22,124 @@ categories:
 # Per default, the master will automatically include all config files
 # from master.d/*.conf (master.d is a directory in the same directory
 # as the main master config file).
-# ÉèÖÃincludeÅäÖÃÎÄ¼ş
+# è®¾ç½®includeé…ç½®æ–‡ä»¶
 #default_include: master.d/*.conf
 
 # The address of the interface to bind to:
-# Publish/Ret ¶Ë¿Ú¼àÌıµØÖ·
+# Publish/Ret ç«¯å£ç›‘å¬åœ°å€
 interface: 0.0.0.0
 
 # Whether the master should listen for IPv6 connections. If this is set to True,
 # the interface option must be adjusted, too. (For example: "interface: '::'")
-# ÉèÖÃIPv6¼àÌıµØÖ·
+# è®¾ç½®IPv6ç›‘å¬åœ°å€
 #ipv6: False
 
 # The tcp port used by the publisher:
-# ZeroMQÏûÏ¢·¢²¼µØÖ·
+# ZeroMQæ¶ˆæ¯å‘å¸ƒåœ°å€
 publish_port: 4505
 
 # The user under which the salt master will run. Salt will update all
 # permissions to allow the specified user to run the master. The exception is
 # the job cache, which must be deleted if this user is changed. If the
 # modified files cause conflicts, set verify_env to False.
-# SaltStackÔËĞĞÓÃ»§
+# SaltStackè¿è¡Œç”¨æˆ·
 #user: root
 
 # The port used by the communication interface. The ret (return) port is the
 # interface used for the file server, authentication, job returns, etc.
-# SaltStackÏûÏ¢½ÓÊÕ¶Ë¿Ú
+# SaltStackæ¶ˆæ¯æ¥æ”¶ç«¯å£
 ret_port: 4506
 
 # Specify the location of the daemon process ID file:
-# salt-master½ø³ÌpidÎÄ¼ş
+# salt-masterè¿›ç¨‹pidæ–‡ä»¶
 #pidfile: /var/run/salt-master.pid
 
 # The root directory prepended to these options: pki_dir, cachedir,
 # sock_dir, log_file, autosign_file, autoreject_file, extension_modules,
 # key_logfile, pidfile:
-# SaltStack¹¤×÷¸ùÄ¿Â¼
+# SaltStackå·¥ä½œæ ¹ç›®å½•
 #root_dir: /
 
 # Directory used to store public key data:
-# SaltStack¹«Ô¿´æ´¢Ä¿Â¼
+# SaltStackå…¬é’¥å­˜å‚¨ç›®å½•
 #pki_dir: /etc/salt/pki/master
 
 # Directory to store job and cache data:
 # This directory may contain sensitive data and should be protected accordingly.
 #
-# SaltStack jobsºÍcache»º´æÄ¿Â¼
+# SaltStack jobså’Œcacheç¼“å­˜ç›®å½•
 #cachedir: /var/cache/salt/master
 
 # Directory for custom modules. This directory can contain subdirectories for
 # each of Salt's module types such as "runners", "output", "wheel", "modules",
 # "states", "returners", etc.
-# ×Ô¶¨ÒåÄ£¿éÄ¿Â¼
+# è‡ªå®šä¹‰æ¨¡å—ç›®å½•
 #extension_modules: <no default>
 
 # Directory for custom modules. This directory can contain subdirectories for
 # each of Salt's module types such as "runners", "output", "wheel", "modules",
 # "states", "returners", etc.
 # Like 'extension_modules' but can take an array of paths
-# ×Ô¶¯ÒÔÄ£¿éÍ¬²½Ä¿Â¼
+# è‡ªåŠ¨ä»¥æ¨¡å—åŒæ­¥ç›®å½•
 #module_dirs: <no default>
 #   - /var/cache/salt/minion/extmods
 
 # Verify and set permissions on configuration directories at startup:
-# ·şÎñÆô¶¯Ê±½øĞĞÈ¨ÏŞÉèÖÃºÍÑéÖ¤
+# æœåŠ¡å¯åŠ¨æ—¶è¿›è¡Œæƒé™è®¾ç½®å’ŒéªŒè¯
 #verify_env: True
 
 # Set the number of hours to keep old job information in the job cache:
-# ÉèÖÃjobsĞÅÏ¢¹ıÆÚÊ±¼ä
+# è®¾ç½®jobsä¿¡æ¯è¿‡æœŸæ—¶é—´
 #keep_jobs: 24
 
 # Set the default timeout for the salt command and api. The default is 5
 # seconds.
-# SaltºÍAPIÃüÁî³¬Ê±Ê±¼ä,µ¥Î»£ºÃë/s
+# Saltå’ŒAPIå‘½ä»¤è¶…æ—¶æ—¶é—´,å•ä½ï¼šç§’/s
 #timeout: 5
 
 # The loop_interval option controls the seconds for the master's maintenance
 # process check cycle. This process updates file server backends, cleans the
 # job cache and executes the scheduler.
-# ÉèÖÃSaltStack½ø³Ì¼ì²âÖÜÆÚ(job cache fileserver backendsµÈµÈ)
+# è®¾ç½®SaltStackè¿›ç¨‹æ£€æµ‹å‘¨æœŸ(job cache fileserver backendsç­‰ç­‰)
 #loop_interval: 60
 
 # Set the default outputter used by the salt command. The default is "nested".
-# Ö¸¶¨SaltStackÃüÁîoutputÀàĞÍ
+# æŒ‡å®šSaltStackå‘½ä»¤outputç±»å‹
 #output: nested
 
 # Return minions that timeout when running commands like test.ping
-# ¿ªÆôminion timeout ÌáĞÑ
+# å¼€å¯minion timeout æé†’
 #show_timeout: True
 
 # By default, output is colored. To disable colored output, set the color value
 # to False.
-# ¿ªÆôoutputÑÕÉ«ÏÔÊ¾
+# å¼€å¯outputé¢œè‰²æ˜¾ç¤º
 #color: True
 
 # Do not strip off the colored output from nested results and state outputs
 # (true by default).
-# ²£Á§ÑÕÉ«ÏÔÊ¾
+# ç»ç’ƒé¢œè‰²æ˜¾ç¤º
 # strip_colors: False
 
 # Set the directory used to hold unix sockets:
-# ¶¨Òå½ø³ÌsockÄ¿Â¼
+# å®šä¹‰è¿›ç¨‹sockç›®å½•
 #sock_dir: /var/run/salt/master
 
 # The master can take a while to start up when lspci and/or dmidecode is used
 # to populate the grains for the master. Enable if you want to see GPU hardware
 # data for your master.
-# ÉèÖÃgrainsÊÕ¼¯GPUĞÅÏ¢
+# è®¾ç½®grainsæ”¶é›†GPUä¿¡æ¯
 # enable_gpu_grains: False
 
 # The master maintains a job cache. While this is a great addition, it can be
 # a burden on the master for larger deployments (over 5000 minions).
 # Disabling the job cache will make previously executed jobs unavailable to
 # the jobs system and is not generally recommended.
-# ¿ªÆôjob cache¼ÇÂ¼
+# å¼€å¯job cacheè®°å½•
 #job_cache: True
 
 # Cache minion grains and pillar data in the cachedir.
-# »º´æminion grains pillar Êı¾İ
+# ç¼“å­˜minion grains pillar æ•°æ®
 #minion_data_cache: True
 
 # Store all returns in the given returner.
@@ -147,24 +147,24 @@ ret_port: 4506
 # be set. See various returners in salt/returners for details on required
 # configuration values. (See also, event_return_queue below.)
 #
-# ÉèÖÃreturn´æ´¢
+# è®¾ç½®returnå­˜å‚¨
 #event_return: mysql
 
 # On busy systems, enabling event_returns can cause a considerable load on
 # the storage system for returners. Events can be queued on the master and
 # stored in a batched fashion using a single transaction for multiple events.
 # By default, events are not queued.
-# ÉèÖÃreturn¶ÓÁĞ´óĞ¡
+# è®¾ç½®returné˜Ÿåˆ—å¤§å°
 #event_return_queue: 0
 
 # Only events returns matching tags in a whitelist
-# ÉèÖÃreturn°×Ãûµ¥
+# è®¾ç½®returnç™½åå•
 # event_return_whitelist:
 #   - salt/master/a_tag
 #   - salt/master/another_tag
 
 # Store all event returns _except_ the tags in a blacklist
-# ÉèÖÃreturnºÚÃûµ¥
+# è®¾ç½®returné»‘åå•
 # event_return_blacklist:
 #   - salt/master/not_this_tag
 #   - salt/master/or_this_one
@@ -172,7 +172,7 @@ ret_port: 4506
 # Passing very large events can cause the minion to consume large amounts of
 # memory. This value tunes the maximum size of a message allowed onto the
 # master event bus. The value is expressed in bytes.
-# ×î´óevent´óĞ¡
+# æœ€å¤§eventå¤§å°
 #max_event_size: 1048576
 
 # By default, the master AES key rotates every 24 hours. The next command
@@ -284,26 +284,26 @@ ret_port: 4506
 
 # Enable auto_accept, this setting will automatically accept all incoming
 # public keys from the minions. Note that this is insecure.
-# ×Ô¶¯Ç©Ö¤Ä£Ê½
+# è‡ªåŠ¨ç­¾è¯æ¨¡å¼
 #auto_accept: False
 
 # Time in minutes that a incoming public key with a matching name found in
 # pki_dir/minion_autosign/keyid is automatically accepted. Expired autosign keys
 # are removed when the master checks the minion_autosign directory.
 # 0 equals no timeout
-# ×Ô¶¯Ç©Ö¤³¬Ê±Ê±¼ä
+# è‡ªåŠ¨ç­¾è¯è¶…æ—¶æ—¶é—´
 # autosign_timeout: 120
 
 # If the autosign_file is specified, incoming keys specified in the
 # autosign_file will be automatically accepted. This is insecure.  Regular
 # expressions as well as globing lines are supported.
-# ×Ô¶¯Ç©Ö¤¹æÔòÎÄ¼ş
+# è‡ªåŠ¨ç­¾è¯è§„åˆ™æ–‡ä»¶
 #autosign_file: /etc/salt/autosign.conf
 
 # Works like autosign_file, but instead allows you to specify minion IDs for
 # which keys will automatically be rejected. Will override both membership in
 # the autosign_file and the auto_accept setting.
-# ×Ô¶¯¾Ü¾øÇ©Ö¤¹æÔòÎÄ¼ş
+# è‡ªåŠ¨æ‹’ç»ç­¾è¯è§„åˆ™æ–‡ä»¶
 #autoreject_file: /etc/salt/autoreject.conf
 
 # Enable permissive access to the salt keys. This allows you to run the
@@ -312,14 +312,14 @@ ret_port: 4506
 # you've given access to. This is potentially quite insecure. If an autosign_file
 # is specified, enabling permissive_pki_access will allow group access to that
 # specific file.
-# ÉèÖÃPKIÎÄ¼ş·ÃÎÊÈ¨ÏŞ
+# è®¾ç½®PKIæ–‡ä»¶è®¿é—®æƒé™
 #permissive_pki_access: False
 
 # Allow users on the master access to execute specific commands on minions.
 # This setting should be treated with care since it opens up execution
 # capabilities to non root users. By default this capability is completely
 # disabled.
-# ¶¨ÒåÓÃ»§Ä£¿éÖ´ĞĞÏŞÖÆ
+# å®šä¹‰ç”¨æˆ·æ¨¡å—æ‰§è¡Œé™åˆ¶
 #client_acl:
 #  larry:
 #    - test.ping
@@ -330,7 +330,7 @@ ret_port: 4506
 # This example would blacklist all non sudo users, including root from
 # running any commands. It would also blacklist any use of the "cmd"
 # module. This is completely disabled by default.
-# ¶¨ÒåÄ£¿éºÍÓÃ»§ºÚÃûµ¥
+# å®šä¹‰æ¨¡å—å’Œç”¨æˆ·é»‘åå•
 # 
 #client_acl_blacklist:
 #  users:
@@ -341,30 +341,30 @@ ret_port: 4506
 
 # Enforce client_acl & client_acl_blacklist when users have sudo
 # access to the salt command.
-# ¹Ø±ÕÀûÓÃsudoºóclient_aclÏŞÖÆ
+# å…³é—­åˆ©ç”¨sudoåclient_aclé™åˆ¶
 # 
 #sudo_acl: False
 
 # The external auth system uses the Salt auth modules to authenticate and
 # validate users to access areas of the Salt system.
-# Ö¸¶¨Íâ²¿ÈÏÖ¤·½Ê½
+# æŒ‡å®šå¤–éƒ¨è®¤è¯æ–¹å¼
 #external_auth:
 #  pam:
 #    fred:
 #      - test.*
 #
 # Time (in seconds) for a newly generated token to live. Default: 12 hours
-# ÉèÖÃtoken¹ıÆÚÊ±¼ä
+# è®¾ç½®tokenè¿‡æœŸæ—¶é—´
 #token_expire: 43200
 
 # Allow minions to push files to the master. This is disabled by default, for
 # security purposes.
-# ÉèÖÃminionÊÇ·ñÔÊĞípushÎÄ¼şµ½master
+# è®¾ç½®minionæ˜¯å¦å…è®¸pushæ–‡ä»¶åˆ°master
 #file_recv: False
 
 # Set a hard-limit on the size of the files that can be pushed to the master.
 # It will be interpreted as megabytes. Default: 100
-# ÉèÖÃminion pushÎÄ¼şµ½masterµÄÊıÁ¿ÏŞÖÆ
+# è®¾ç½®minion pushæ–‡ä»¶åˆ°masterçš„æ•°é‡é™åˆ¶
 #file_recv_max_size: 100
 
 # Signature verification on messages published from the master.

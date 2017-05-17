@@ -1,17 +1,17 @@
 ---
-title: SaltStack³£ÓÃ×é¼şÊ¹ÓÃ
+title: SaltStackå¸¸ç”¨ç»„ä»¶ä½¿ç”¨
 date: 2017-05-208T16:11:52+00:00
-author: Éîº£ÓÎÓã
+author: æ·±æµ·æ¸¸é±¼
 layout: post
 categories:
-  - ÔËÎ¬
+  - è¿ç»´
 ---
 
-# SaltStack³£ÓÃ×é¼ş
+# SaltStackå¸¸ç”¨ç»„ä»¶
 
-## Ò»¡¢¹ØÓÚSaltStackµÄÄ£¿é
+## ä¸€ã€å…³äºSaltStackçš„æ¨¡å—
 
-SaltStackÖĞµÄModuleÊÇÎÒÃÇÈÕ³£Ê¹ÓÃSaltStack½Ó´¥×î¶àµÄÒ»¸ö×é¼ş£¬ÊÇÓÃÓÚ¹ÜÀí¶ÔÏó²Ù×÷µÄ£¬ÕâÒ²ÊÇSaltStackÍ¨¹ıPushµÄ·½Ê½½øĞĞ¹ÜÀíµÄÈë¿Ú£¬±ÈÈçÎÒÃÇÈÕ³£¼òµ¥µÄÖ´ĞĞÃüÁî¡¢²é¿´°ü°²×°Çé¿ö¡¢²é¿´·şÎñÔËĞĞÇé¿öµÈ¹¤×÷¶¼ÊÇÍ¨¹ıSaltStack ModuleÀ´ÊµÏÖµÄ¡£Ä¬ÈÏ°²×°ºÃMasterºÍMinion°üÖ®ºó£¬ÏµÍ³ÉÏ»á°²×°ºÜ¶àModule£¬´ó¼Ò¿ÉÒÔÍ¨¹ıÒÔÏÂÃüÁî²é¿´Ö§³ÖµÄËùÓĞModuleÁĞ±í¡£
+SaltStackä¸­çš„Moduleæ˜¯æˆ‘ä»¬æ—¥å¸¸ä½¿ç”¨SaltStackæ¥è§¦æœ€å¤šçš„ä¸€ä¸ªç»„ä»¶ï¼Œæ˜¯ç”¨äºç®¡ç†å¯¹è±¡æ“ä½œçš„ï¼Œè¿™ä¹Ÿæ˜¯SaltStacké€šè¿‡Pushçš„æ–¹å¼è¿›è¡Œç®¡ç†çš„å…¥å£ï¼Œæ¯”å¦‚æˆ‘ä»¬æ—¥å¸¸ç®€å•çš„æ‰§è¡Œå‘½ä»¤ã€æŸ¥çœ‹åŒ…å®‰è£…æƒ…å†µã€æŸ¥çœ‹æœåŠ¡è¿è¡Œæƒ…å†µç­‰å·¥ä½œéƒ½æ˜¯é€šè¿‡SaltStack Moduleæ¥å®ç°çš„ã€‚é»˜è®¤å®‰è£…å¥½Masterå’ŒMinionåŒ…ä¹‹åï¼Œç³»ç»Ÿä¸Šä¼šå®‰è£…å¾ˆå¤šModuleï¼Œå¤§å®¶å¯ä»¥é€šè¿‡ä»¥ä¸‹å‘½ä»¤æŸ¥çœ‹æ”¯æŒçš„æ‰€æœ‰Moduleåˆ—è¡¨ã€‚
 
 ```
 [root@pactera-jenkins-server pillar]# salt 'centos68-2*' sys.list_modules
@@ -35,7 +35,7 @@ centos68-2.test.pactera.top:
 ....
 ```
 
-Èç¹ûÎÒÃÇĞèÒª²é¿´Ä£¿éÖĞ¾ßÌå¿ÉÒÔÊ¹ÓÃµÄ²Ù×÷·½·¨£¬ÔòÊ¹ÓÃsys.list_functions
+å¦‚æœæˆ‘ä»¬éœ€è¦æŸ¥çœ‹æ¨¡å—ä¸­å…·ä½“å¯ä»¥ä½¿ç”¨çš„æ“ä½œæ–¹æ³•ï¼Œåˆ™ä½¿ç”¨sys.list_functions
 ```
 [root@pactera-jenkins-server pillar]# salt 'centos68-2*' sys.list_functions service
 centos68-2.test.pactera.top:
@@ -55,28 +55,28 @@ centos68-2.test.pactera.top:
     - service.status
     - service.stop
 ```
-Èç¹ûÎÒÃÇĞèÒª²é¿´¸ÃÄ£¿éµÄÏêÏ¸ÓÃ·¨¿ÉÒÔÊ¹ÓÃsalt 'target' sys.doc [Ä£¿éÃû³Æ]
+å¦‚æœæˆ‘ä»¬éœ€è¦æŸ¥çœ‹è¯¥æ¨¡å—çš„è¯¦ç»†ç”¨æ³•å¯ä»¥ä½¿ç”¨salt 'target' sys.doc [æ¨¡å—åç§°]
 
 
 
-## ¶ş¡¢SaltStack Ä¿±ê¶ÔÏó¹ÜÀí
+## äºŒã€SaltStack ç›®æ ‡å¯¹è±¡ç®¡ç†
 
-ÔÚ´ó¹æÄ£·şÎñÆ÷¼¯ÈºÖĞ£¬Ê×ÏÈÎÒÃÇ¶ÔÎ¬»¤ºÃ¹ÜÀíµÄ¶ÔÏó£¬ÔÚSaltStackÏµÍ³ÖĞ°Ñ¹ÜÀíµÄÄ¿±ê¶ÔÏó³ÆÎª¡±Target¡°£¬ÔÚMasterÉÏÎÒÃÇ¿ÉÒÔ²ÉÓÃ²»Í¬µÄTargetÈ¥¹ÜÀí²»Í¬µÄMinion¡£Õâ¸öTargetÍ¨¹ı¹ÜÀíºÍÆ¥ÅäMinionµÄIDÀ´×öÒ»Ğ©¼¯ºÏµÄÆ¥Åä¡£SaltStack¹ÜÀí¶ÔÏóÓµÓĞ¶àÖÖ·½Ê½£¬°üÀ¨Glob(Ä¬ÈÏ)¡¢PCRE¡¢list¡¢subnet¡¢Grain¡¢Grain PCRE¡¢Pillar¡¢Compound(»ìºÏ)¡¢Nodegroup(½Úµã×é).
+åœ¨å¤§è§„æ¨¡æœåŠ¡å™¨é›†ç¾¤ä¸­ï¼Œé¦–å…ˆæˆ‘ä»¬å¯¹ç»´æŠ¤å¥½ç®¡ç†çš„å¯¹è±¡ï¼Œåœ¨SaltStackç³»ç»Ÿä¸­æŠŠç®¡ç†çš„ç›®æ ‡å¯¹è±¡ç§°ä¸ºâ€Targetâ€œï¼Œåœ¨Masterä¸Šæˆ‘ä»¬å¯ä»¥é‡‡ç”¨ä¸åŒçš„Targetå»ç®¡ç†ä¸åŒçš„Minionã€‚è¿™ä¸ªTargeté€šè¿‡ç®¡ç†å’ŒåŒ¹é…Minionçš„IDæ¥åšä¸€äº›é›†åˆçš„åŒ¹é…ã€‚SaltStackç®¡ç†å¯¹è±¡æ‹¥æœ‰å¤šç§æ–¹å¼ï¼ŒåŒ…æ‹¬Glob(é»˜è®¤)ã€PCREã€listã€subnetã€Grainã€Grain PCREã€Pillarã€Compound(æ··åˆ)ã€Nodegroup(èŠ‚ç‚¹ç»„).
 
-### 2.1 Ä¿±ê¶ÔÏóÆ¥ÅäÄ£Ê½
+### 2.1 ç›®æ ‡å¯¹è±¡åŒ¹é…æ¨¡å¼
 
-1. ÕıÔòÆ¥Åä
-ÔÚ²Ù×÷Óë¹ÜÀíMinionÊ±¿ÉÒÔÍ¨¹ıÕıÔò±í´ïÊ½À´Æ¥ÅäMinion IDµÄ·½Ê½È¥¹ÜÀíËüÃÇ¡£±ÈÈçÎÒÃÇÏëÒª¶ÔÆ¥Åäµ½'Min*'×Ö·û´®µÄMinion½øĞĞ²Ù×÷£¬¿ÉÒÔ°´ÈçÏÂ´úÂëÅäÖÃ£º
+1. æ­£åˆ™åŒ¹é…
+åœ¨æ“ä½œä¸ç®¡ç†Minionæ—¶å¯ä»¥é€šè¿‡æ­£åˆ™è¡¨è¾¾å¼æ¥åŒ¹é…Minion IDçš„æ–¹å¼å»ç®¡ç†å®ƒä»¬ã€‚æ¯”å¦‚æˆ‘ä»¬æƒ³è¦å¯¹åŒ¹é…åˆ°'Min*'å­—ç¬¦ä¸²çš„Minionè¿›è¡Œæ“ä½œï¼Œå¯ä»¥æŒ‰å¦‚ä¸‹ä»£ç é…ç½®ï¼š
 ```
 SaltStack@Master: salt -E  'Min*' test.ping 
 Minion:
     True 
 Minion1:
     True
-Min*¾ÍÊÇÒ»¸ö¼òµ¥µÄÕıÔò±í´ïÊ½£¬µ±È»ÄãÒ²¿ÉÒÔĞ´³öÈÎºÎÕıÔò±í´ïÊ½È¥Æ¥ÅäMinion ID¡£
+Min*å°±æ˜¯ä¸€ä¸ªç®€å•çš„æ­£åˆ™è¡¨è¾¾å¼ï¼Œå½“ç„¶ä½ ä¹Ÿå¯ä»¥å†™å‡ºä»»ä½•æ­£åˆ™è¡¨è¾¾å¼å»åŒ¹é…Minion IDã€‚
 ```
 
-2. ÁĞ±íÆ¥Åä
+2. åˆ—è¡¨åŒ¹é…
 ```
 SaltStack@Master: salt -L  Minion,Minion1 test.ping
 Minion:
@@ -85,9 +85,9 @@ Minion1:
     True
 
 ```
-MinionºÍMinion1Í¨¹ıÁĞ±íµÄ·½Ê½È¥Ö¸¶¨Minion ID£¬¿ÉÖ±½ÓÊ¹ÓÃ¡£
+Minionå’ŒMinion1é€šè¿‡åˆ—è¡¨çš„æ–¹å¼å»æŒ‡å®šMinion IDï¼Œå¯ç›´æ¥ä½¿ç”¨ã€‚
 
-3. GriansÆ¥Åä
+3. GriansåŒ¹é…
 ```
 SaltStack@Master: salt -G  'os:MacOS' test.ping 
 Minion:
@@ -96,9 +96,9 @@ Minion1:
     True
 ```
 
-ÆäÖĞos:MacOS£¬ÕâÀïµÄ¶ÔÏóÊÇÒ»×é¼üÖµ¶Ô£¬ÕâÀïÓÃµ½ÁËMinionµÄGrainsµÄ¼üÖµ¶Ô¡£ÔÚºóÃæ½éÉÜGrainsµÄÊ±ºò»áÏêÏ¸½²½â£¬ÕâÀïÖ»ĞèÒªÖªµÀ¿ÉÒÔÍ¨¹ı¼üÖµ¶ÔµÄ·½Ê½È¥Æ¥ÅäMinion ID¡£µ±È»SaltStackÒ²Ö§³ÖÕıÔòÆ¥ÅäGrainsĞÅÏ¢£¬´ó¼Ò¿ÉÒÔÍ¨¹ı--grain-pcre²ÎÊıÈ¥Æ¥Åä¡£
+å…¶ä¸­os:MacOSï¼Œè¿™é‡Œçš„å¯¹è±¡æ˜¯ä¸€ç»„é”®å€¼å¯¹ï¼Œè¿™é‡Œç”¨åˆ°äº†Minionçš„Grainsçš„é”®å€¼å¯¹ã€‚åœ¨åé¢ä»‹ç»Grainsçš„æ—¶å€™ä¼šè¯¦ç»†è®²è§£ï¼Œè¿™é‡Œåªéœ€è¦çŸ¥é“å¯ä»¥é€šè¿‡é”®å€¼å¯¹çš„æ–¹å¼å»åŒ¹é…Minion IDã€‚å½“ç„¶SaltStackä¹Ÿæ”¯æŒæ­£åˆ™åŒ¹é…Grainsä¿¡æ¯ï¼Œå¤§å®¶å¯ä»¥é€šè¿‡--grain-pcreå‚æ•°å»åŒ¹é…ã€‚
 
-4. ×éÆ¥Åä
+4. ç»„åŒ¹é…
 ```
 SaltStack@Master: salt -N  groups  test.ping 
 Minion:
@@ -106,13 +106,13 @@ Minion:
 Minion1:
     True
 ```
-ÔÚSaltStackÏµÍ³ÖĞÒ²¿ÉÒÔÌáÇ°¸øMinion¶¨Òå×é½ÇÉ«£¬µ«ÊÇĞèÒªÌáÇ°ÖªµÀMinion IDĞÅÏ¢²ÅÄÜ°ÑËü¶¨Òåµ½Ä³¸ö×éÖĞ¡£groupsÊÇÎÒÃÇÔÚmasterÅäÖÃÎÄ¼şÖĞ¶¨ÒåµÄ×éÃû³Æ¡£
+åœ¨SaltStackç³»ç»Ÿä¸­ä¹Ÿå¯ä»¥æå‰ç»™Minionå®šä¹‰ç»„è§’è‰²ï¼Œä½†æ˜¯éœ€è¦æå‰çŸ¥é“Minion IDä¿¡æ¯æ‰èƒ½æŠŠå®ƒå®šä¹‰åˆ°æŸä¸ªç»„ä¸­ã€‚groupsæ˜¯æˆ‘ä»¬åœ¨masteré…ç½®æ–‡ä»¶ä¸­å®šä¹‰çš„ç»„åç§°ã€‚
 ```
 nodegroups:
     groups: 'L@Minon,Minion1
 ```
 
-5. ¸´ºÏÆ¥Åä
+5. å¤åˆåŒ¹é…
 ```
 SaltStack@Master: salt -C  'G@os:MacOS or L@Minion1'  test.ping 
 Minion:
@@ -120,9 +120,9 @@ Minion:
 Minion1:
     True
 ```
-os:MacOS or L@Minion1ÊÇÒ»¸ö¸´ºÏ×éºÏ£¬Ö§³ÖÊ¹ÓÃandºÍor¹ØÁª¶à¸öÌõ¼ş¡£
+os:MacOS or L@Minion1æ˜¯ä¸€ä¸ªå¤åˆç»„åˆï¼Œæ”¯æŒä½¿ç”¨andå’Œorå…³è”å¤šä¸ªæ¡ä»¶ã€‚
 
-6. PillarÖµÆ¥Åä
+6. Pillarå€¼åŒ¹é…
 ```
 SaltStack@Master: salt -I  'key:value'  test.ping 
 Minion:
@@ -131,9 +131,9 @@ Minion1:
     True
 ```
 
-key:valueÊÇPillarÏµÍ³ÖĞ¶¨ÒåµÄÒ»×é¼üÖµ¶Ô£¬¸úGrainsµÄ¼üÖµ¶ÔÀàËÆ¡£ÔÚÏÂÃæµÄÕÂ½ÚÀïÃæÎÒÃÇÒ²»áÏêÏ¸½éÉÜSaltStackÖĞµÄPillarÏµÍ³¡£
+key:valueæ˜¯Pillarç³»ç»Ÿä¸­å®šä¹‰çš„ä¸€ç»„é”®å€¼å¯¹ï¼Œè·ŸGrainsçš„é”®å€¼å¯¹ç±»ä¼¼ã€‚åœ¨ä¸‹é¢çš„ç« èŠ‚é‡Œé¢æˆ‘ä»¬ä¹Ÿä¼šè¯¦ç»†ä»‹ç»SaltStackä¸­çš„Pillarç³»ç»Ÿã€‚
 
-7. subnetÆ¥Åä
+7. subnetåŒ¹é…
 ```
 SaltStack@Master: salt -S  '192.168.1.0/24'  test.ping 
 Minion:
@@ -142,13 +142,13 @@ Minion1:
     True
 ```
 
-192.168.1.0/24ÊÇÒ»¸öÖ¸¶¨µÄCIDRÍø¶Î£¬ÕâÀïCIDRÆ¥ÅäµÄIPµØÖ·ÊÇMinionÁ¬½ÓMatser 4505¶Ë¿ÚµÄÀ´Ô´µØÖ·¡£
+192.168.1.0/24æ˜¯ä¸€ä¸ªæŒ‡å®šçš„CIDRç½‘æ®µï¼Œè¿™é‡ŒCIDRåŒ¹é…çš„IPåœ°å€æ˜¯Minionè¿æ¥Matser 4505ç«¯å£çš„æ¥æºåœ°å€ã€‚
 
-8. ³£¼ûµÄTargetÆ¥ÅäÄ£Ê½ÈçÏÂ±íËùÊ¾£º
+8. å¸¸è§çš„TargetåŒ¹é…æ¨¡å¼å¦‚ä¸‹è¡¨æ‰€ç¤ºï¼š
 
-²ÎÊı| Æ¥ÅäÄ£Ê½        |       Àı×Ó                           | ±¸×¢
+å‚æ•°| åŒ¹é…æ¨¡å¼        |       ä¾‹å­                           | å¤‡æ³¨
   L | List of minions | L@Minion,Minion1,Minion2,Minion3     |
-  G | Grains glob     | G@os:Ubuntu                          |²Ù×÷ÏµÍ³Æ½Ì¨²»Çø·Ö´óĞ¡Ğ´
+  G | Grains glob     | G@os:Ubuntu                          |æ“ä½œç³»ç»Ÿå¹³å°ä¸åŒºåˆ†å¤§å°å†™
   E | PCRE minion ID  | E@Minion[1-3]                        |
   P | Grains PCRE     | P@os:(Centos\Fedora\Redhat)          |
   I | Pillar glob     | I@key:value                          |
@@ -156,12 +156,12 @@ Minion1:
   R | Range cluster   | R@%foo.bar                           |
   C | compound        | G@os:MacOS or L@Minion1              |
 
-### 2.2 ¹ÜÀí¶ÔÏóÊôĞÔ
+### 2.2 ç®¡ç†å¯¹è±¡å±æ€§
 
-GrainsÊÇSaltStack×é¼şÖĞ·Ç³£ÖØÒªµÄ×é¼şÖ®Ò»£¬ÒòÎªÎÒÃÇÔÚ×öÅäÖÃ²¿ÊğµÄ¹ı³ÌÖĞ»á¾­³£Ê¹ÓÃËü£¬GrainsÊÇSaltStack¼ÇÂ¼MinionµÄÒ»Ğ©¾²Ì¬ĞÅÏ¢µÄ×é¼ş£¬ÎÒÃÇ¿ÉÒÔ¼òµ¥µØÀí½âÎªGrainsÀïÃæ¼ÇÂ¼×ÅÃ¿Ì¨MinionµÄÒ»Ğ©³£ÓÃÊôĞÔ£¬±ÈÈçCPU¡¢ÄÚ´æ¡¢´ÅÅÌ¡¢ÍøÂçĞÅÏ¢µÈ£¬ÎÒÃÇ¿ÉÒÔÍ¨¹ıgrains.items²é¿´Ä³Ì¨MinionµÄËùÓĞGrainsĞÅÏ¢£¬MinionsµÄGrainsĞÅÏ¢ÊÇMinionsÆô¶¯µÄÊ±ºò²É¼¯»ã±¨¸øMasterµÄ£¬ÔÚÊµ¼ÊÓ¦ÓÃ»·¾³ÖĞÎÒÃÇĞèÒª¸ù¾İ×Ô¼ºµÄÒµÎñĞèÇóÈ¥×Ô¶¨ÒåÒ»Ğ©Grains£¬¹ØÓÚ×Ô¶¨ÒåGrainsµÄ³£ÓÃ·½·¨ÓĞÒÔÏÂ¼¸ÖÖ£º
-- Í¨¹ıMinionÅäÖÃÎÄ¼ş¶¨Òå¡£
-- Í¨¹ıGrainsÏà¹ØÄ£¿é¶¨Òå¡£
-- Í¨¹ıPython½Å±¾¶¨Òå¡£
+Grainsæ˜¯SaltStackç»„ä»¶ä¸­éå¸¸é‡è¦çš„ç»„ä»¶ä¹‹ä¸€ï¼Œå› ä¸ºæˆ‘ä»¬åœ¨åšé…ç½®éƒ¨ç½²çš„è¿‡ç¨‹ä¸­ä¼šç»å¸¸ä½¿ç”¨å®ƒï¼ŒGrainsæ˜¯SaltStackè®°å½•Minionçš„ä¸€äº›é™æ€ä¿¡æ¯çš„ç»„ä»¶ï¼Œæˆ‘ä»¬å¯ä»¥ç®€å•åœ°ç†è§£ä¸ºGrainsé‡Œé¢è®°å½•ç€æ¯å°Minionçš„ä¸€äº›å¸¸ç”¨å±æ€§ï¼Œæ¯”å¦‚CPUã€å†…å­˜ã€ç£ç›˜ã€ç½‘ç»œä¿¡æ¯ç­‰ï¼Œæˆ‘ä»¬å¯ä»¥é€šè¿‡grains.itemsæŸ¥çœ‹æŸå°Minionçš„æ‰€æœ‰Grainsä¿¡æ¯ï¼ŒMinionsçš„Grainsä¿¡æ¯æ˜¯Minionså¯åŠ¨çš„æ—¶å€™é‡‡é›†æ±‡æŠ¥ç»™Masterçš„ï¼Œåœ¨å®é™…åº”ç”¨ç¯å¢ƒä¸­æˆ‘ä»¬éœ€è¦æ ¹æ®è‡ªå·±çš„ä¸šåŠ¡éœ€æ±‚å»è‡ªå®šä¹‰ä¸€äº›Grainsï¼Œå…³äºè‡ªå®šä¹‰Grainsçš„å¸¸ç”¨æ–¹æ³•æœ‰ä»¥ä¸‹å‡ ç§ï¼š
+- é€šè¿‡Minioné…ç½®æ–‡ä»¶å®šä¹‰ã€‚
+- é€šè¿‡Grainsç›¸å…³æ¨¡å—å®šä¹‰ã€‚
+- é€šè¿‡Pythonè„šæœ¬å®šä¹‰ã€‚
 ```
 SaltStack@Master: salt 'Minion' sys.list_functions grains
 Minion:
@@ -179,8 +179,8 @@ Minion:
     - grains.setvals
 ```
 
-#### 2.2.1 MinionÅäÖÃÎÄ¼ş¶¨ÒåGrains
-ÏÂÃæÎÒÃÇÏÈ½éÉÜÏÂ±È½Ï¼òµ¥µÄGrains×Ô¶¨Òå·½·¨£¬¾ÍÊÇÍ¨¹ıMinionÅäÖÃÎÄ¼ş¶¨Òå¡£Ç°ÃæÒÑ¾­½²µ½MinionsµÄGrainsĞÅÏ¢ÊÇÔÚMinions·şÎñÆô¶¯µÄÊ±ºò»ã±¨¸øMatserµÄ£¬ËùÒÔÎÒÃÇĞèÒªĞŞ¸ÄºÃMinionÅäÖÃÎÄ¼şºóÖØÆôMinion·şÎñ¡£ÔÚMinionµÄ/etc/salt/minionÅäÖÃÎÄ¼şÖĞÄ¬ÈÏÓĞÒ»Ğ©×¢ÊÍĞĞ¡£ÕâÀï¾ÍÊÇÔÚMinionÉÏµÄminionÅäÖÃÎÄ¼şÖĞÈçºÎ¶¨ÒåGrainsĞÅÏ¢Àı×Ó¡£ÏÂÃæÖ»Ğè¸ù¾İ×Ô¶¯µÄĞèÇó°´ÕÕÒÔÏÂ¸ñÊ½È¥ÌîĞ´ÏàÓ¦µÄ¼üÖµ¶Ô¾ÍĞĞ£¬´ó¼Ò×¢Òâ¸ñÊ½¾ÍĞĞ£¬SaltStackµÄÅäÖÃÎÄ¼şµÄÄ¬ÈÏ¸ñÊ½¶¼ÊÇYAML¸ñÊ½£º
+#### 2.2.1 Minioné…ç½®æ–‡ä»¶å®šä¹‰Grains
+ä¸‹é¢æˆ‘ä»¬å…ˆä»‹ç»ä¸‹æ¯”è¾ƒç®€å•çš„Grainsè‡ªå®šä¹‰æ–¹æ³•ï¼Œå°±æ˜¯é€šè¿‡Minioné…ç½®æ–‡ä»¶å®šä¹‰ã€‚å‰é¢å·²ç»è®²åˆ°Minionsçš„Grainsä¿¡æ¯æ˜¯åœ¨MinionsæœåŠ¡å¯åŠ¨çš„æ—¶å€™æ±‡æŠ¥ç»™Matserçš„ï¼Œæ‰€ä»¥æˆ‘ä»¬éœ€è¦ä¿®æ”¹å¥½Minioné…ç½®æ–‡ä»¶åé‡å¯MinionæœåŠ¡ã€‚åœ¨Minionçš„/etc/salt/minioné…ç½®æ–‡ä»¶ä¸­é»˜è®¤æœ‰ä¸€äº›æ³¨é‡Šè¡Œã€‚è¿™é‡Œå°±æ˜¯åœ¨Minionä¸Šçš„minioné…ç½®æ–‡ä»¶ä¸­å¦‚ä½•å®šä¹‰Grainsä¿¡æ¯ä¾‹å­ã€‚ä¸‹é¢åªéœ€æ ¹æ®è‡ªåŠ¨çš„éœ€æ±‚æŒ‰ç…§ä»¥ä¸‹æ ¼å¼å»å¡«å†™ç›¸åº”çš„é”®å€¼å¯¹å°±è¡Œï¼Œå¤§å®¶æ³¨æ„æ ¼å¼å°±è¡Œï¼ŒSaltStackçš„é…ç½®æ–‡ä»¶çš„é»˜è®¤æ ¼å¼éƒ½æ˜¯YAMLæ ¼å¼ï¼š
 ```
 #grains:
 #  roles:
@@ -191,7 +191,7 @@ Minion:
 #  cab_u: 14-15
 ```
 
-ÎªÁËÍ³Ò»¹ÜÀíMinionµÄGrainsĞÅÏ¢£¬ĞèÒª°ÑÕâĞ©×¢ÊÍ¸´ÖÆµ½minion.d/grainsÎÄ¼şÖĞ£º
+ä¸ºäº†ç»Ÿä¸€ç®¡ç†Minionçš„Grainsä¿¡æ¯ï¼Œéœ€è¦æŠŠè¿™äº›æ³¨é‡Šå¤åˆ¶åˆ°minion.d/grainsæ–‡ä»¶ä¸­ï¼š
 ```
 SaltStack@Minion: cat /etc/minion.d/grains
 grains:
@@ -203,7 +203,7 @@ deployment: datacenter4
     cab_u: 14-15
 ```
 
-È»ºóÍ¨¹ı/etc/init.d/salt-minion restartÃüÁîÖØÆôMinion·şÎñ¡£Ö®ºó¾Í¿ÉÒÔÈ¥MasterÉÏ²é¿´¶¨ÒåµÄGrainsĞÅÏ¢ÊÇ·ñÉúĞ§£º
+ç„¶åé€šè¿‡/etc/init.d/salt-minion restartå‘½ä»¤é‡å¯MinionæœåŠ¡ã€‚ä¹‹åå°±å¯ä»¥å»Masterä¸ŠæŸ¥çœ‹å®šä¹‰çš„Grainsä¿¡æ¯æ˜¯å¦ç”Ÿæ•ˆï¼š
 ```
 SaltStack@Master: salt 'Minion' grains.item roles
 Minion:
@@ -218,23 +218,23 @@ Minion:
         13
 ```
 
-#### 2.2.2 GrainsÄ£¿é¶¨ÒåGrains
+#### 2.2.2 Grainsæ¨¡å—å®šä¹‰Grains
 
-ÏÂÃæÍ¨¹ıGrainsÄ£¿é¶¨ÒåGrainsĞÅÏ¢£º
+ä¸‹é¢é€šè¿‡Grainsæ¨¡å—å®šä¹‰Grainsä¿¡æ¯ï¼š
 ```
-SaltStack@Master: salt 'Minion' grains.append saltbook 'verycool' #ÉèÖÃgrainsĞÅÏ¢
+SaltStack@Master: salt 'Minion' grains.append saltbook 'verycool' #è®¾ç½®grainsä¿¡æ¯
 Minion:
     ----------
     saltbook:
         - verycool
-SaltStack@Master: salt 'Minion' grains.item saltbook #²é¿´grainsĞÅÏ¢
+SaltStack@Master: salt 'Minion' grains.item saltbook #æŸ¥çœ‹grainsä¿¡æ¯
 Minion:
     ----------
     saltbook:
         - verycool
 ```
 
-¿ÉÒÔÍ¨¹ıÊ¹ÓÃgrains.setvalsÍ¬Ê±ÉèÖÃ¶à¶ÔGrainsĞÅÏ¢£º
+å¯ä»¥é€šè¿‡ä½¿ç”¨grains.setvalsåŒæ—¶è®¾ç½®å¤šå¯¹Grainsä¿¡æ¯ï¼š
 ```
 [root@pactera-jenkins-server ~]# salt -E 'centos68-2.test.pactera.top' grains.setvals "{'salt':'good','book':'cool'}"
 centos68-2.test.pactera.top:
@@ -245,18 +245,18 @@ centos68-2.test.pactera.top:
         good
 ```
 
-## Èı¡¢PillarÊı¾İ¹ÜÀíÖĞĞÄ
+## ä¸‰ã€Pillaræ•°æ®ç®¡ç†ä¸­å¿ƒ
 
-### 3.1 Ê²Ã´ÊÇPillar£¿
+### 3.1 ä»€ä¹ˆæ˜¯Pillarï¼Ÿ
 
-PillarÊÇSaltStackÖØÒªµÄ×é¼şÖ®Ò»£¬ÎÒÃÇ¾­³£ÅäºÏstatesÔÚ´ó¹æÄ£ÅäÖÃ¹ÜÀí¹¤×÷ÖĞÊ¹ÓÃËü£¬PillarÔÚSaltStackÖĞÖ÷Òª×÷ÓÃ¾ÍÊÇ´æ´¢ºÍ¶¨ÒåÅäÖÃ¹ÜÀíÖĞĞèÒªµÄÒ»Ğ©Êı¾İ£¬±ÈÈç°æ±¾ºÅ£¬ÓÃ»§ÃûºÍÃÜÂëµÈĞÅÏ¢£¬ËüµÄ¶¨Òå´æ´¢¸ñÊ½¸úGrainsÀàËÆ£¬¶¼ÊÇYAML¸ñÊ½¡£ÔÚSaltStack MasterÅäÖÃÎÄ¼şÖĞÓĞÒ»¶Î Pillar SettingsÑ¡Ïî¶¨ÒåÁËPillarÏà¹ØµÄ²ÎÊı£º
+Pillaræ˜¯SaltStacké‡è¦çš„ç»„ä»¶ä¹‹ä¸€ï¼Œæˆ‘ä»¬ç»å¸¸é…åˆstatesåœ¨å¤§è§„æ¨¡é…ç½®ç®¡ç†å·¥ä½œä¸­ä½¿ç”¨å®ƒï¼ŒPillaråœ¨SaltStackä¸­ä¸»è¦ä½œç”¨å°±æ˜¯å­˜å‚¨å’Œå®šä¹‰é…ç½®ç®¡ç†ä¸­éœ€è¦çš„ä¸€äº›æ•°æ®ï¼Œæ¯”å¦‚ç‰ˆæœ¬å·ï¼Œç”¨æˆ·åå’Œå¯†ç ç­‰ä¿¡æ¯ï¼Œå®ƒçš„å®šä¹‰å­˜å‚¨æ ¼å¼è·ŸGrainsç±»ä¼¼ï¼Œéƒ½æ˜¯YAMLæ ¼å¼ã€‚åœ¨SaltStack Masteré…ç½®æ–‡ä»¶ä¸­æœ‰ä¸€æ®µ Pillar Settingsé€‰é¡¹å®šä¹‰äº†Pillarç›¸å…³çš„å‚æ•°ï¼š
 ```
 #pillar_roots:
 #    base:
 #        - /srv/pillar
 ```
 
-ÏÖÔÚÎÒÃÇÖ»ĞèÒªÁË½âpillar_rootsÏà¹ØµÄÅäÖÃ¼´¿É£¬Ä¬ÈÏBase»·¾³ÏÂPillarµÄ¹¤×÷Ä¿Â¼ÔÚ/srv/pillarÄ¿Â¼ÏÂ¡£Èç¹ûÄãÏë¶¨Òå¶à¸ö»·¾³²»Í¬µÄPillar¹¤×÷Ä¿Â¼£¬Ö»ĞèÒªĞŞ¸ÄÕâ´¦ÅäÖÃÎÄ¼ş¼´¿É¡£ÏÂÃæÎÒ¾ÍÓÃÄ¬ÈÏµÄÅäÖÃ£¬Ê×ÏÈÈ¥pillar¹¤×÷Ä¿Â¼ĞÂ½¨top.slsÎÄ¼şÈ»ºóÒıÓÃÁ½¸öslsÎÄ¼ş£º
+ç°åœ¨æˆ‘ä»¬åªéœ€è¦äº†è§£pillar_rootsç›¸å…³çš„é…ç½®å³å¯ï¼Œé»˜è®¤Baseç¯å¢ƒä¸‹Pillarçš„å·¥ä½œç›®å½•åœ¨/srv/pillarç›®å½•ä¸‹ã€‚å¦‚æœä½ æƒ³å®šä¹‰å¤šä¸ªç¯å¢ƒä¸åŒçš„Pillarå·¥ä½œç›®å½•ï¼Œåªéœ€è¦ä¿®æ”¹è¿™å¤„é…ç½®æ–‡ä»¶å³å¯ã€‚ä¸‹é¢æˆ‘å°±ç”¨é»˜è®¤çš„é…ç½®ï¼Œé¦–å…ˆå»pillarå·¥ä½œç›®å½•æ–°å»ºtop.slsæ–‡ä»¶ç„¶åå¼•ç”¨ä¸¤ä¸ªslsæ–‡ä»¶ï¼š
 ```
 [root@pactera-jenkins-server pillar]# cat /srv/pillar/top.sls 
 base:
@@ -274,7 +274,7 @@ zabbix:
       user: admin
 ```
 
-Í¨¹ıÒÔÏÂÃüÁî²é¿´¹ØÓÚPillarÏà¹ØµÄÒ»Ğ©Ä£¿éÓÃ·¨£º
+é€šè¿‡ä»¥ä¸‹å‘½ä»¤æŸ¥çœ‹å…³äºPillarç›¸å…³çš„ä¸€äº›æ¨¡å—ç”¨æ³•ï¼š
 
 ```
 [root@pactera-jenkins-server pillar]# salt 'centos68-2*' sys.list_functions pillar
@@ -292,7 +292,7 @@ centos68-2.test.pactera.top:
     - pillar.raw
 ```
 
-ÏÂÃæ¿´Ò»ÏÂ¸Õ¸Õ¶¨ÒåµÄpillar
+ä¸‹é¢çœ‹ä¸€ä¸‹åˆšåˆšå®šä¹‰çš„pillar
 ```
 [root@pactera-jenkins-server pillar]# salt 'centos68-2*' pillar.item zabbix
 centos68-2.test.pactera.top:
@@ -309,16 +309,16 @@ centos68-2.test.pactera.top:
             3.0.8
 ```
 
-Õâ¸öÊ±ºòÎÒÃÇ¾Í¿ÉÒÔ²é¿´µ½¸Õ²Å¶¨ÒåµÄPillarÖµ¡£µ±È»SaltStackÒ²Ö§³Ö´ÓÍâ²¿¶ÁÈ¡PillarÊı¾İ¡£ÎÒÃÇ¿ÉÒÔ°ÑPillarÊı¾İ´æÔÚÊı¾İ¿â»òÕß´æ´¢·şÎñÆ÷ÉÏ¡£Ä¿Ç°¹ÙÍøÒ²ÒÑ¾­×Ô´ø24ÖÖext_pillarÊı¾İÔ´ÁË¡£
+è¿™ä¸ªæ—¶å€™æˆ‘ä»¬å°±å¯ä»¥æŸ¥çœ‹åˆ°åˆšæ‰å®šä¹‰çš„Pillarå€¼ã€‚å½“ç„¶SaltStackä¹Ÿæ”¯æŒä»å¤–éƒ¨è¯»å–Pillaræ•°æ®ã€‚æˆ‘ä»¬å¯ä»¥æŠŠPillaræ•°æ®å­˜åœ¨æ•°æ®åº“æˆ–è€…å­˜å‚¨æœåŠ¡å™¨ä¸Šã€‚ç›®å‰å®˜ç½‘ä¹Ÿå·²ç»è‡ªå¸¦24ç§ext_pillaræ•°æ®æºäº†ã€‚
 
-## ËÄ¡¢StatesÅäÖÃ¹ÜÀí
+## å››ã€Statesé…ç½®ç®¡ç†
 
-### 4.1 ¹ØÓÚStates
-StatesÊÇSaltStackÖĞµÄÅäÖÃÓïÑÔ£¬ÔÚÈÕ³£½øĞĞÅäÖÃ¹ÜÀíÊ±ĞèÒª±àĞ´´óÁ¿µÄStatesÎÄ¼ş¡£±ÈÈçÎÒÃÇĞèÒª°²×°Ò»¸ö°ü£¬È»ºó¹ÜÀíÒ»¸öÅäÖÃÎÄ¼ş£¬×îºó±£Ö¤Ä³¸ö·şÎñÕı³£ÔËĞĞ¡£ÕâÀï¾ÍĞèÒªÎÒÃÇ±àĞ´Ò»Ğ©states slsÎÄ¼ş£¨ÃèÊö×´Ì¬ÅäÖÃµÄÎÄ¼ş£©È¥ÃèÊöºÍÊµÏÖÎÒÃÇµÄ¹¦ÄÜ¡£ÕâÀïĞèÒªËµÃ÷µÄÊÇ±àĞ´µÄstates slsÎÄ¼ş¶¼ÊÇYAMLÓï·¨¡£µ±È»states slsÎÄ¼şÒ²Ö§³ÖÊ¹ÓÃPythonÓïÑÔÀ´±àĞ´¡£
+### 4.1 å…³äºStates
+Statesæ˜¯SaltStackä¸­çš„é…ç½®è¯­è¨€ï¼Œåœ¨æ—¥å¸¸è¿›è¡Œé…ç½®ç®¡ç†æ—¶éœ€è¦ç¼–å†™å¤§é‡çš„Statesæ–‡ä»¶ã€‚æ¯”å¦‚æˆ‘ä»¬éœ€è¦å®‰è£…ä¸€ä¸ªåŒ…ï¼Œç„¶åç®¡ç†ä¸€ä¸ªé…ç½®æ–‡ä»¶ï¼Œæœ€åä¿è¯æŸä¸ªæœåŠ¡æ­£å¸¸è¿è¡Œã€‚è¿™é‡Œå°±éœ€è¦æˆ‘ä»¬ç¼–å†™ä¸€äº›states slsæ–‡ä»¶ï¼ˆæè¿°çŠ¶æ€é…ç½®çš„æ–‡ä»¶ï¼‰å»æè¿°å’Œå®ç°æˆ‘ä»¬çš„åŠŸèƒ½ã€‚è¿™é‡Œéœ€è¦è¯´æ˜çš„æ˜¯ç¼–å†™çš„states slsæ–‡ä»¶éƒ½æ˜¯YAMLè¯­æ³•ã€‚å½“ç„¶states slsæ–‡ä»¶ä¹Ÿæ”¯æŒä½¿ç”¨Pythonè¯­è¨€æ¥ç¼–å†™ã€‚
 
-### 4.2 StatesµÄÓÃ·¨
+### 4.2 Statesçš„ç”¨æ³•
 
-ÔÚ´ó¹æÄ£ÅäÖÃ¹ÜÀí¹¤×÷ÖĞ£¬ÎÒÃÇĞèÒª±àĞ´´óÁ¿µÄstates.slsÎÄ¼ş¡£top.slsÊÇstatesÅäÖÃÏµÍ³µÄÈë¿ÚÎÄ¼ş£¬ËüÔÚ´ó¹æÄ£ÅäÖÃ¹ÜÀí¹¤×÷ÖĞ¸ºÔğÖ¸¶¨ÄÄĞ©Éè±¸µ÷ÓÃ
+åœ¨å¤§è§„æ¨¡é…ç½®ç®¡ç†å·¥ä½œä¸­ï¼Œæˆ‘ä»¬éœ€è¦ç¼–å†™å¤§é‡çš„states.slsæ–‡ä»¶ã€‚top.slsæ˜¯statesé…ç½®ç³»ç»Ÿçš„å…¥å£æ–‡ä»¶ï¼Œå®ƒåœ¨å¤§è§„æ¨¡é…ç½®ç®¡ç†å·¥ä½œä¸­è´Ÿè´£æŒ‡å®šå“ªäº›è®¾å¤‡è°ƒç”¨
 
 
 
