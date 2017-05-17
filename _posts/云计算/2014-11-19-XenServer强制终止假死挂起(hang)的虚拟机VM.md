@@ -12,7 +12,8 @@ image: /wp-content/uploads/2014/11/xen.jpg
 categories:
   - 云计算
 tags:
-  - xen
+  - Xen
+  - 云计算
 ---
 在XenServer中，经常出现虚拟机挂起假死，使用XenCenter无法关机、重启的情况，这是应为虚拟机（VM）挂起假死所致。造成虚拟机假死的原因很多，如:本身虚拟机系统的原因、XenServer底层XAPI接口的问题。
 

@@ -12,7 +12,9 @@ image: /wp-content/uploads/2015/09/aws-recovery-1-220x150.png
 categories:
   - 云计算
 tags:  
-  - 公有云运维  
+  - 公有云运维
+  - AWS
+  - 云计算
 ---
 我们有时候Amazon AWS的云服务器，由于AWS没有提供类似国内云服务器厂商的远程控制台服务，在出现网络、防火墙和远程桌面服务问题导致云服务器无法访问的情况发生后，进行恢复就特别的麻烦。
   

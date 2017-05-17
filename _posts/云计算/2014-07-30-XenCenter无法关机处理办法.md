@@ -11,7 +11,8 @@ views:
 categories:
   - 云计算
 tags:
-  - 云计算-Xen  
+  - Xen
+  - 云计算  
 ---
 通过XenCenter无法关机，一直卡在那里，控制台界面也看不到，SSH登陆xen server
 
