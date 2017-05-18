@@ -11,7 +11,7 @@ views:
 categories:
   - 运维
 tags:
-  - "监控"  
+  - 监控
 ---
 [<img class="size-medium wp-image-146 aligncenter" src="http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2-300x124.png" alt="zabbix" width="300" height="124" srcset="http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2-300x124.png 300w, http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2.png 728w" sizes="(max-width: 300px) 100vw, 300px" />](http://images.wanglijie.cn/public/img/posts/2014/08/Zabbix-2-2.png)
   

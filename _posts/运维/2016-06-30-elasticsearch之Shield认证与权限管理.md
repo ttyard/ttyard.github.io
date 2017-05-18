@@ -12,7 +12,7 @@ image: /wp-content/uploads/2016/06/shield-triad-220x150.png
 categories:
   - 运维
 tags:
-  - elk
+  - ELK Stack
 ---
 ## 1.  Shield认证服务
 

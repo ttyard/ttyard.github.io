@@ -12,7 +12,7 @@ image: /wp-content/uploads/2016/06/logstash-logo-1-220x150.png
 categories:
   - 运维
 tags:
-  - elk
+  - ELK Stack
 ---
 本文是继上篇[《ELK 综合日志归档分析系统(1)-Elasticsearch安装配置》](http://www.wanglijie.cn/2016/06/elk-%e7%bb%bc%e5%90%88%e6%97%a5%e5%bf%97%e5%bd%92%e6%a1%a3%e5%88%86%e6%9e%90%e7%b3%bb%e7%bb%9f1-elasticsearch%e5%ae%89%e8%a3%85%e9%85%8d%e7%bd%ae.html)之后的第二篇，将详细介绍ELK之Logstash安装配置，关于基础环境配置，请参考第一篇文章。
 

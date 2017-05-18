@@ -12,7 +12,7 @@ image: /wp-content/uploads/2016/07/elasticsearch-logo-2-220x150.png
 categories:
   - 运维
 tags:
-  - elk
+  - ELK Stack
 ---
 ES通过设置【节点的名字】和【集群的名字】，就能自动的组织相同集群名字的节点加入到集群中，并使很多的技术对用户透明化。
   

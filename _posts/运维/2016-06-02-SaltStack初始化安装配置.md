@@ -12,7 +12,6 @@ image: /wp-content/uploads/2016/06/saltstack-220x72.png
 categories:
   - 运维
 tags:
-  - devopt
   - SaltStack
 ---
 ## 一、SaltStack简介

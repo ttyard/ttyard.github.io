@@ -1,11 +1,17 @@
 ---
 title: SaltStack常用组件使用
-date: 2017-05-208T16:11:52+00:00
+date: 2017-05-08T16:11:52+00:00
 author: 深海游鱼
 layout: post
+permalink: '/2017/05/SaltStack常用组件使用.html'
+image: 
 categories:
   - 运维
+tags:
+  - SaltStack
+  - 运维
 ---
+
 
 # SaltStack常用组件
 

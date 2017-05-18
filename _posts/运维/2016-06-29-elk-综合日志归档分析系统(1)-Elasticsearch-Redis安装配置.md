@@ -12,7 +12,7 @@ image: /wp-content/uploads/2016/06/ELK-Mapping-220x150.png
 categories:
   - 运维
 tags:
-  - elk
+  - ELK Stack
 ---
 ELK全称（elasticsearch、logstash、kibana），是目前广泛使用的日志聚合和分析系统。该系统综合应用了这3种开源系统，构建日志采集传输（logstash）、存储搜索（elasticsearch）和前端展示分析（kibana）。
 
